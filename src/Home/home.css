@@ -122,3 +122,35 @@ letter-spacing: 1.6px;
 text-transform: uppercase;
 color: #000000;
 }
+.langEng{
+    background-color:#f0bb7c !important;
+    margin-right: -5px !important;
+    z-index: 0 !important;
+    position: relative;
+}
+.langArab{
+    background-color:#FFFFFF !important;
+    margin-right: -5px !important
+}
+.langEngArab{
+    background-color: #f0bb7c;
+}
+.langArabEng{
+    background-color: #FFFFFF !important;
+}
+.rightCorner{
+    right: 0%;
+    position: absolute;
+}
+.modal-backdrop {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+.modal{
+    position: relative;
+}

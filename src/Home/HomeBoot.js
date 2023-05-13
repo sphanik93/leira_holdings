@@ -5,9 +5,11 @@ import logo from '../assets/leira_logo.png.png'
 import brick from '../assets/old-brick.png'
 import spring from '../assets/spring.png'
 import '../Home/home.css'
+import Hamburger from "./Components/hamBurger";
 
 export function Homepage1() {
   const [windowType,setWindowType] = useState(false)
+  const [langChange, setLangChange] = useState('eng')
   let windowsize = window.innerWidth;
   console.log('windowsize',windowsize)
   useEffect(()=>{
@@ -36,9 +38,13 @@ export function Homepage1() {
         height: "781px",
      }}>
       <img src={logo} className="logo"/>
-      <div className="rightswitchmenu m-4">
-      <button type="button" class=" btn-sm border border-warning" style={{backgroundColor:"#f0bb7c"}}>ENGLISH</button>
-      <button type="button" class=" btn-sm border border-warning">ٱلشَّارقَة</button>
+      <div className="rightCorner m-3">
+      <button type="button" class={langChange =="eng"?"btn-sm border border-warning langEng":"btn-sm border border-warning langArab"} onClick={()=>setLangChange('eng')} >ENGLISH</button>
+      <button type="button" class={langChange =="arab"?"btn-sm border border-warning langEngArab":"btn-sm border border-warning langArabEng"} onClick={()=>setLangChange('arab')}>ٱلشَّارقَة</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+      <Hamburger/>
       </div>
     </div>
     {/* <div class="carousel-item" style={{
