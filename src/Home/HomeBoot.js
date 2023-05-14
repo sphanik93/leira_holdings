@@ -6,6 +6,7 @@ import brick from '../assets/old-brick.png'
 import spring from '../assets/spring.png'
 import '../Home/home.css'
 import Hamburger from "./Components/hamBurger";
+import hambericon from '../assets/more.png';
 
 export function Homepage1() {
   const [windowType,setWindowType] = useState(false)
@@ -41,9 +42,10 @@ export function Homepage1() {
       <div className="rightCorner m-3">
       <button type="button" class={langChange =="eng"?"btn-sm border border-warning langEng":"btn-sm border border-warning langArab"} onClick={()=>setLangChange('eng')} >ENGLISH</button>
       <button type="button" class={langChange =="arab"?"btn-sm border border-warning langEngArab":"btn-sm border border-warning langArabEng"} onClick={()=>setLangChange('arab')}>ٱلشَّارقَة</button>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      {/* <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Launch demo modal
-</button>
+</button> */}
+<img src={hambericon} class="hamberIcon ml-4" data-toggle="modal" data-target="#exampleModal"/>
       <Hamburger/>
       </div>
     </div>
