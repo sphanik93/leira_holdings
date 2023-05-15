@@ -1,0 +1,209 @@
+#line1 {
+    font-size:0;
+    width:15%;
+    height:2px;
+    color:#fff;
+    background-color:#AA9063;
+    margin:auto;
+    margin-left: 35%;
+ } 
+#line2 {
+    font-size:0;
+    width:2px;
+    height:215px;
+    color:#fff;
+    background-color:#000;    
+    margin:auto;
+    margin-left: 45%;
+ }
+ #line3 {
+    font-size:0;
+    width:19%;
+    height:2px;
+    color:#fff;
+    background-color:#000;    
+    margin-left: 45%;
+ }
+ #line4 {
+    font-size:0;
+    width:10%;
+    height:2px;
+    color:#fff;
+    background-color:#AA9063;    
+    margin-left: 50%;
+    position: absolute
+ }
+ #line5 {
+    font-size:0;
+    width:2px;
+    height:190px;
+    color:#fff;
+    background-color:#AA9063;    
+    margin:auto;
+ }
+ #line6 {
+    font-size:0;
+    width:23%;
+    height:2px;
+    color:#fff;
+    background-color:#000;
+    margin:auto;
+    margin-left: 50%;
+    margin-top: -2px;
+ }
+ #line7{
+    font-size:0;
+    width:2px;
+    height:155px;
+    color:#fff;
+    background-color:#000;    
+    margin:auto;
+    margin-left: 55%;
+ }
+ #line8 {
+    font-size:0;
+    width:25%;
+    height:2px;
+    color:#fff;
+    background-color:#000;
+    margin:auto;
+    margin-left: 55%;
+ }
+
+ .lerialogo{
+    margin-left: -97%;
+    margin-top: -53%;
+    width: 100%;
+ }
+
+.graph-top{
+    margin-top: 8% !important;
+}
+
+    /* For Desktop View */
+@media screen and (min-device-width: 767px) {
+    /* and (min-device-width: 678px) { */
+        .circle1 {
+            width: 86%;
+            /* height: 199px; */
+            background-color:#fff;
+            border:2px solid black;    
+            border-radius: 50%;
+            z-index: 9;
+            position: relative;
+            margin-top: -99%;
+            margin-left: 251%;
+            line-height: 11;
+            font-size: 18px;
+          color: black;
+          text-align: center;
+          }
+          .circle {
+            width: 127%;
+            /* height: 199px; */
+            background-color:#fff;
+            border:2px solid black;    
+            border-radius: 50%;
+            z-index: 9;
+            position: relative;
+            margin-top: -65%;
+            margin-left: 100%;
+            line-height: 11;
+            font-size: 16px;
+          color: black;
+          text-align: center;
+          }
+          .circle3{
+            width: 89%;
+            /* height: 199px; */
+            background-color:#fff;
+            border:2px solid black;    
+            border-radius: 50%;
+            z-index: 9;
+            position: relative;
+            margin-top: 10%;
+            margin-left: 193%;
+            line-height: 11;
+            font-size: 18px;
+          color: black;
+          text-align: center;
+        }
+        .circle4{
+            width: 86%;
+            /* height: 199px; */
+            background-color:#fff;
+            border:2px solid black;    
+            border-radius: 50%;
+            z-index: 9;
+            position: relative;
+            margin-top: -21%;
+            margin-left: 283%;
+            line-height: 11;
+            font-size: 18px;
+          color: black;
+          text-align: center;
+        }
+}
+ 
+@media screen and (max-width: 767px) {
+    .circle1 {
+        width: 138%;
+        /* height: 199px; */
+        background-color:#fff;
+        border:2px solid black;    
+        border-radius: 50%;
+        z-index: 9;
+        position: relative;
+        margin-top: -115%;
+        margin-left: 251%;
+        line-height: 6;
+        font-size: 12px;
+      color: black;
+      text-align: center;
+      }
+      .circle {
+        width: 209%;
+        /* height: 199px; */
+        background-color:#fff;
+        border:2px solid black;    
+        border-radius: 50%;
+        z-index: 9;
+        position: relative;
+        margin-top: -89%;
+        margin-left: 100%;
+        line-height:6;
+        font-size: 12px;
+      color: black;
+      text-align: center;
+      }
+      .circle3{
+        width: 145%;
+        /* height: 199px; */
+        background-color:#fff;
+        border:2px solid black;    
+        border-radius: 50%;
+        z-index: 9;
+        position: relative;
+        margin-top: 246%;
+        margin-left: 193%;
+        line-height: 3;
+        font-size: 12px;
+      color: black;
+      text-align: center;
+    }
+    .circle4{
+        width: 140%;
+        /* height: 199px; */
+        background-color:#fff;
+        border:2px solid black;    
+        border-radius: 50%;
+        z-index: 9;
+        position: relative;
+        margin-top: 142%;
+        margin-left: 283%;
+        line-height: 3;
+        font-size: 12px;
+      color: black;
+      text-align: center;
+    }
+}

@@ -2,8 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import dubaitopview from '../assets/top-view-dubai.png'
 import logo from '../assets/leira_logo.png.png'
-import brick from '../assets/old-brick.png'
-import spring from '../assets/spring.png'
+// import brick from '../assets/old-brick.png'
+// import spring from '../assets/spring.png'
 
 
 export function Homepage() {
@@ -32,14 +32,14 @@ export function Homepage() {
     switch (photo) {
       case 1:
         return dubaitopview;
-      case 2:
-        return brick;
-      case 3:
-        return spring;
-      case 4:
-        return brick;
+      // case 2:
+      //   return brick;
+      // case 3:
+      //   return spring;
+      // case 4:
+      //   return brick;
       default:
-        return spring;
+        return dubaitopview;
     }
   };
 

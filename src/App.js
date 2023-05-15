@@ -13,8 +13,8 @@ function App() {
     <div className="App">
        <Router> 
         <Routes>
-              <Route exact path="/" element={<Homepage />} />
-              <Route exact path="/homeboot" element={<Homepage1 />} />
+              <Route exact path="/" element={<Homepage1 />} />
+              <Route exact path="/homapage" element={<Homepage />} />
               </Routes>
               </Router>
       
