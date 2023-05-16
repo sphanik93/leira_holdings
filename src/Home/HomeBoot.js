@@ -92,10 +92,10 @@ export function Homepage1() {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      {/* <div className="thired-phase"> */}
+      <div className="thired-phase">
      <p className="business-lines-heading">Invest in Future</p>
      <div className="row">
-    <img src={InvestinFuture} className="invest-in-future-img"/>
+    <img src={InvestinFuture} className="invest-in-future-img col-xs-12 col-md-5"/>
     <div className="col-md-6">
       <p className="invest-in-future-heading">Leira future Smart City</p>
       <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
@@ -171,7 +171,7 @@ export function Homepage1() {
      </div>
      </div> */}
     </div>
-
+</div>
   </div>
   <div class="" style={{display:"flex", justifyContent:'center'}}>
   <div class={"col-md-3 col-xl-2 col-sm-4 col-lg-3 col-xs-3 curosalmoveallignment row justify-content-center"}>
