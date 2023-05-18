@@ -1,0 +1,38 @@
+.arrow-left{
+    /* width: 65px !important; */
+    height: fit-content;
+}
+.arrow-right{
+    /* width: 65px !important; */
+    height: fit-content;
+}
+.arrow-left:hover{
+    transform: scale(1.2);
+}
+.arrow-right:hover{
+    transform: scale(1.2);
+}
+.count_div{
+    color: black !important;
+    position: relative !important;
+    margin-top: 13px !important;
+    margin-bottom: 17px !important
+}
+.read_more{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 26px;
+align-items: center;
+letter-spacing: 1.6px;
+text-transform: uppercase;
+color: #000000;
+background-color: #fff;
+border: 2px solid #AA9063;
+border-radius: 78px;
+width: 204px;
+height: 40px;
+margin-top: 5px;
+}
+

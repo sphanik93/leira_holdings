@@ -2,11 +2,11 @@ import React from "react";
 import { useEffect, useState } from "react";
 import expandIcon from "../../assets/expand-icon.png"
 import '../../Home/home.css'
-import facebook from "../../assets/facebook.png";
-import twitter from "../../assets/twitter.png";
-import instagram from "../../assets/instagram.png";
+import facebook from "../../assets/a.facebook.png";
+import twitter from "../../assets/a.twitter.png";
+import instagram from "../../assets/a.instagram.png";
 
-export default function Hamburger() {
+export default function Hamburger(props) {
   const [businessLines, setBusinessLines] = useState([])
   const [expanding, setExpanding] = useState(false)
   const [projectexpand,setProjectexpand] = useState(false)
@@ -23,16 +23,14 @@ export default function Hamburger() {
     projectexpand ? setProjectexpand(false) : setProjectexpand(true)
   }
   function selectingMenu(e){
-    console.log(e.target.innerText)
     setSelectedMenu(e.target.innerText)
   }
-  console.log(selectedMenu)
 return(
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="">
-        <button type="button" class="close m-3" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close m-3" data-dismiss="modal" aria-label="Close" onClick={()=>props.opened(false)}>
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -61,9 +59,9 @@ return(
         <div className="mt-5 model-footer ml-5">
         <button type="button" class="btn btn-warning">CONTACT US</button>
         <div className="d-flex">
-          <img src={instagram} style={{width: '42px',height: '42px'}}/>
-        <img src={facebook} style={{width: '42px',height: '42px'}}/>
-        <img src={twitter}  style={{width: '42px',height: '42px'}}/>
+          <img src={instagram} className="social-icons"/>
+        <img src={facebook} className="social-icons ml-3"/>
+        <img src={twitter}  className="social-icons ml-3"/>
         </div>
         </div>
     </div>

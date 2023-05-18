@@ -11,13 +11,13 @@ import { Homepage1 } from './Home/HomeBoot';
 function App() {
   return (
     <div className="App">
-       <Router> 
+      <Router>
         <Routes>
-              <Route exact path="/" element={<Homepage1 />} />
-              <Route exact path="/homapage" element={<Homepage />} />
-              </Routes>
-              </Router>
-      
+          <Route exact path="/" element={<Homepage1 />} />
+          <Route exact path="/homapage" element={<Homepage />} />
+        </Routes>
+      </Router>
+
     </div>
   );
 }
