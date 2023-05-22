@@ -10,6 +10,9 @@ import $ from 'jquery';
 import Graph from "./Components/Graph";
 import Thired_phase from "./Components/thired_phase.js";
 import Praposed_projects from "./Components/praposed_projects";
+import OurApproach from "./Components/OurApproach.js";
+import Header from "./Header_Footer/Header.js"
+import Footer from "./Header_Footer/Footer.js"
 
 export function Homepage1() {
   const [blackMenu, setGoldmenu] = useState(false)
@@ -22,6 +25,7 @@ export function Homepage1() {
     setGoldmenu(mes)
   }
   return (<div>
+     <Header/>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -37,16 +41,7 @@ export function Homepage1() {
           width: "100%",
           height: "781px",
         }}>
-          <img src={logo} className="logo" />
-          <div className="rightCorner">
-            <button type="button" class={langChange == "eng" ? "btn-sm border border-warning langEng" : "btn-sm border border-warning langArab"} onClick={() => setLangChange('eng')} >ENGLISH</button>
-            <button type="button" class={langChange == "arab" ? "btn-sm border border-warning langEngArab" : "btn-sm border border-warning langArabEng"} onClick={() => setLangChange('arab')}>ٱلشَّارقَة</button>
-            
-            {!blackMenu? <img src={hambericon} class="hamberIcon ml-4  m-3" data-toggle="modal" data-target="#exampleModal" onClick={()=>setGoldmenu(true)}/>:
-            <img src={gold_menu} class="hamberIcon ml-4  m-3" data-toggle="modal" data-target="#exampleModal"  onClick={()=>setGoldmenu(false)}/>}
-
-            <Hamburger opened={isblackMenu}/>
-          </div>
+         
         </div>
         {/* <div class="carousel-item" style={{
        background: `url(${dubaitopview})`,
@@ -88,7 +83,9 @@ export function Homepage1() {
       <Graph />
     </div>
     <Thired_phase/>
-    <Praposed_projects/>
+    {/* <Praposed_projects/> */}
+    <OurApproach/>
+    <Footer/>
    </div>
   );
 }

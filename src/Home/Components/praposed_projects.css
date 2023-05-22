@@ -2,7 +2,7 @@
     background-color: #F8F8F8;
     /* position: absolute;
 width: 100%; */
-height: 788px;
+height: 860px;
 /* top: 2588px; */
 }
 .business-lines-heading {
@@ -39,7 +39,7 @@ height: 788px;
 
 .flip-box {
     background-color: transparent;
-    width: 300px;
+    width: 100%;
     height: 200px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
@@ -79,6 +79,10 @@ height: 788px;
     height: 265px;
 }
 
+.flip-box .flip-box-inner_3 {
+    /* nothing required */
+}
+
 .img-width_3{
     width: 100%;
     height: 245px;   
@@ -86,7 +90,7 @@ height: 788px;
     height: 254px;
 }
 
-.flip-box .flip-box-inner_3 {
+.flip-box .flip-box-inner_4 {
     transform: rotateY(345deg);
   }
 
@@ -96,7 +100,7 @@ height: 788px;
     height: 265px;
 }
 
-.flip-box .flip-box-inner_4 {
+.flip-box .flip-box-inner_5 {
     transform: rotateY(335deg);
   }
 .img-width_5{
@@ -104,3 +108,51 @@ height: 788px;
     margin-top: 2px;
     height: 300px;
 }
+
+.flip-box .flip-box-inner_6 {
+    /* nothing required */
+}
+.img-width_6{
+    width: 100%;
+    height: 245px;   
+    margin-top: 16px;
+    height: 254px;
+}
+.flip-box .flip-box-inner_null {
+    /* nothing required */
+}
+.img-width_null{
+    width: 100%;
+    height: 245px;   
+    margin-top: 16px;
+    height: 254px;
+}
+
+
+.cmp-carousel {
+    width: 23rem;
+    display: block;
+    position: relative;
+    -webkit-perspective: 145rem;
+    /* perspective: 145rem; */
+    margin: 8rem auto 1.4rem;
+    -webkit-transform-style: preserve-3d;
+    /* transform-style: preserve-3d; */
+}
+
+.shape {
+    background-image: radial-gradient(106% 120px at 50% -30px, #000 75%, transparent 75%);
+    width: 100%;
+    height: 200px;
+  }
+
+
+  .newcau{
+    width: 100%;
+    height: 400px;
+  }
+
+  .slick-slide .slick-active .slick-current .flip-box .flip-box-inner_3{
+    transform: rotateY(26deg) !important;
+    height: 200px;
+  }
