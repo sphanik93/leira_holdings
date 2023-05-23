@@ -1,0 +1,140 @@
+.text-onBG_contact{
+    /* bottom: 0; */
+    position: absolute;
+    margin-left: 5% !important;
+    margin-top: 24%;
+    }
+.contact_text{
+    width: 269px;
+    height: 102px;
+    font-family: 'Avander';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 101px;
+    color: #FFFFFF;
+    }
+.what_help{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 43px;
+align-items: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+
+}
+.enquiry_heading{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 19.7641px;
+line-height: 29px;
+align-items: center;
+letter-spacing: 0.06em;
+color: #000000;
+}
+.container_middle{
+    margin-left: 5%;
+}
+.contact_type_btn{
+    width: 157.45px;
+height: 53.67px;
+background: #ffffff;
+border: 3.40761px solid #AA9063;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18.4011px;
+}
+
+.contact_type_btn_select{
+    width: 157.45px;
+height: 53.67px;
+background: #AA9063;
+border: 3.40761px solid #AA9063;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18.4011px;
+}
+.contact_input_box{
+    width: 270px;
+height: 35px;
+background: #FFFFFF;
+border: 0.681522px solid #828282;
+}
+.contact_input_box2{
+    width: 170px;
+height: 35px;
+background: #FFFFFF;
+border: 0.681522px solid #828282;
+}
+.send_btn{
+    width: 159px;
+    height: 40px;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+.map_img{
+    width: 100%;
+    height: 488px;
+}
+.circle_map{
+    position: absolute;
+    background-color:#fff;
+    border:6px solid #AA9063;    
+    height:40px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:40px;
+    margin-top: -3%;
+    margin-left: 29%;
+}
+.circle_square_box{
+  background-color: #000000;
+  width: 338px;
+height: 188px;
+border:6px solid #AA9063; 
+margin-top: 17%;
+    margin-left: 8%;
+}
+.box_text_heading{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 43px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #DBDBDB
+}
+.box_text_address{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #DBDBDB;
+}
+.box_text_address1{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 0px;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #DBDBDB;
+}
+.address_contact_icon{
+    width: 11px;
+    height: 11px;
+}   

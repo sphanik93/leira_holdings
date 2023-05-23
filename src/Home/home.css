@@ -119,6 +119,8 @@
 .logo {
     left: 0;
     position: fixed;
+    width: 83px;
+    height: 83px;
 }
 
 .rightswitchmenu {
@@ -560,9 +562,17 @@ font-size: 14px;
 line-height: 30px;
 }
 .mobil-footer-img{
-    width: 6%;
+    width: 3%;
 }
 .newsletter_input_mobile{
     width: 100%;
     border-radius: 33px;
+}
+.path{
+    position: fixed;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+.navbar-social-icons_mobile{
+    width: 10%;
 }

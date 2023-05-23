@@ -10,16 +10,10 @@ import skype from '../../assets/a.google-plus.png'
 import linkedin from '../../assets/a.linkedin.png'
 import arrow from '../../assets/Arrow1.png'
 import MediaQuery from "react-responsive";
-
 import "../../Home/home.css"
 
 export default function Footer() {
-    const [blackMenu, setGoldmenu] = useState(false)
-    const [langChange, setLangChange] = useState('eng')
 
-    function isblackMenu(mes){
-        setGoldmenu(mes)
-      }
 
 return(
     <div>
@@ -28,7 +22,7 @@ return(
 <div className="d-flex justify-content-around">
 <img src={logo} className="footerlogo" />
 <div className="d-flex flex-column">
-<div className="d-flex justify-content-around mt-3" id="box-footer">
+<div className="d-flex justify-content-around mt-5" id="box-footer">
 <div>Home</div>
 <div>About Us</div>
 <div>Business Lines</div>
@@ -77,11 +71,11 @@ return(
 © 2023 LEIRA. Design & Developed by Eterna
 </div>
 <div className="d-flex justify-content-between">
-<img src={twitter} className="navbar-social-icons"/>
-<img src={facebook} className="navbar-social-icons"/>
-<img src={insta} className="navbar-social-icons"/>
-<img src={skype} className="navbar-social-icons"/>
-<img src={linkedin} className="navbar-social-icons"/>
+<img src={twitter} className="navbar-social-icons_mobile"/>
+<img src={facebook} className="navbar-social-icons_mobile"/>
+<img src={insta} className="navbar-social-icons_mobile"/>
+<img src={skype} className="navbar-social-icons_mobile"/>
+<img src={linkedin} className="navbar-social-icons_mobile"/>
 </div>
 <span className="newsletter">Newsletter</span>
 <div className="ml-2">
