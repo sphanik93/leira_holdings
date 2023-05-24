@@ -44,31 +44,31 @@ export function Homepage() {
   };
 
   return (
-//     <div
-//       style={{
-//         // backgroundImage: 'url("../assets/top-view-dubai.png")',
-//         backgroundImage: `url(${returnPhotoURL()})`,
-//         backgroundPosition: "center",
-//         backgroundSize: "cover",
-//         backgroundRepeat: "no-repeat",
-//         width: "100%",
-//         height: "500px",
-//       }}
-//     >
-// {/* <img src={dubaitopview} /> */}
-// <p style={{backgroundImage: url('../assets/top-view-dubai.png')}}></p>
-//       <p>hiii</p>
-//     </div>
+    //     <div
+    //       style={{
+    //         // backgroundImage: 'url("../assets/top-view-dubai.png")',
+    //         backgroundImage: `url(${returnPhotoURL()})`,
+    //         backgroundPosition: "center",
+    //         backgroundSize: "cover",
+    //         backgroundRepeat: "no-repeat",
+    //         width: "100%",
+    //         height: "500px",
+    //       }}
+    //     >
+    // {/* <img src={dubaitopview} /> */}
+    // <p style={{backgroundImage: url('../assets/top-view-dubai.png')}}></p>
+    //       <p>hiii</p>
+    //     </div>
 
-<div
-style={{
-       background: `url(${returnPhotoURL()})`,
-       backgroundPosition: "center",
+    <div
+      style={{
+        background: `url(${returnPhotoURL()})`,
+        backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         width: "100%",
         height: "500px",
-     }}
-></div>
+      }}
+    ></div>
   );
 }

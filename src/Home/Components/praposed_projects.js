@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState,useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./praposed_projects.css"
 import dubaitopview from '../../assets/second-layer.png';
 import invertinginfuture from "../../assets/Invest-in-future.png";
@@ -108,7 +108,7 @@ export default function Praposed_projects() {
     if (from == "plus") {
       // projectsArray.map((modify,index)=>{
       var indexValue = filterprojectsArray.findIndex(p => p.divClass == "flip-box-inner_6");
-      
+
       for (let i = 0; i < filterprojectsArray.length; i++) {
         console.log(filterprojectsArray, '=filterprojectsArray[i]=', filterprojectsArray[i])
         if (filterprojectsArray[i].divClass == "flip-box-inner_1") {
@@ -146,16 +146,16 @@ export default function Praposed_projects() {
       setProjectsArray1(filterprojectsArray)
     }
     if (from == "minus") {
-      
+
     }
     localStorage.setItem('projects', JSON.stringify(filterprojectsArray));
 
     setProjectsArray(filterprojectsArray)
     fullData = filterprojectsArray
-    
+
   }
 
-  console.log(fullData,'projectsArraysdata', JSON.parse(localStorage.getItem('projects')),projectsArray, projectsArray1)
+  console.log(fullData, 'projectsArraysdata', JSON.parse(localStorage.getItem('projects')), projectsArray, projectsArray1)
   return (
     <div className="praposedbg">
       {/* <div className="praposedbg">
@@ -192,93 +192,93 @@ export default function Praposed_projects() {
 
 </div>
 </div> */}
-{/* <div className="shape"></div> */}
-<p className="business-lines-heading">Promised Projects</p>
-<Carousel 
-swipeable={false}
-draggable={false}
-showDots={true}
-responsive={responsive}
-ssr={true} // means to render carousel on server-side.
-infinite={true}
-keyBoardControl={true}
-customTransition="all .5"
-transitionDuration={500}
-containerClass="carousel-container"
-removeArrowOnDeviceType={["tablet", "mobile"]}
-dotListClass="custom-dot-list-style"
-itemClass="carousel-item-padding-40-px"
-afterChange={(previousSlide, { currentSlide, onMove }) => {
-  console.log(previousSlide,'===prev',currentSlide)
-}}
-ref={el => {
-  if (el) {
-      var slidesToShow = el.state.slidesToShow
-      var currentSlide = el.state.currentSlide
-console.log(slidesToShow,currentSlide, slidesToShow+currentSlide,"======",el)
-      // setCurrent(el.state)
-  }
-}}
-beforeChange={(nextSlide, { currentSlide, onMove,el }) => {
-  console.log(nextSlide,'nextSlide',el,currentSlide, onMove)
-  changeImage(nextSlide)
-}}
-renderButtonGroupOutside={true}
-arrows={false}
-customButtonGroup={<ButtonGroup />}
-// itemClass={styles.carouselItem} 
->
-  {projectsArray.map((data)=>(
+      {/* <div className="shape"></div> */}
+      <p className="business-lines-heading">Promised Projects</p>
+      <Carousel
+        swipeable={false}
+        draggable={false}
+        showDots={true}
+        responsive={responsive}
+        ssr={true} // means to render carousel on server-side.
+        infinite={true}
+        keyBoardControl={true}
+        customTransition="all .5"
+        transitionDuration={500}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+        afterChange={(previousSlide, { currentSlide, onMove }) => {
+          console.log(previousSlide, '===prev', currentSlide)
+        }}
+        ref={el => {
+          if (el) {
+            var slidesToShow = el.state.slidesToShow
+            var currentSlide = el.state.currentSlide
+            console.log(slidesToShow, currentSlide, slidesToShow + currentSlide, "======", el)
+            // setCurrent(el.state)
+          }
+        }}
+        beforeChange={(nextSlide, { currentSlide, onMove, el }) => {
+          console.log(nextSlide, 'nextSlide', el, currentSlide, onMove)
+          changeImage(nextSlide)
+        }}
+        renderButtonGroupOutside={true}
+        arrows={false}
+        customButtonGroup={<ButtonGroup />}
+      // itemClass={styles.carouselItem} 
+      >
+        {projectsArray.map((data) => (
 
-<div className="flip-box">
-   <div class={data.divClass}>
-     <img src={data.img} class={data.imgClass}/>
-     </div>
-     </div>
-  ))}
+          <div className="flip-box">
+            <div class={data.divClass}>
+              <img src={data.img} class={data.imgClass} />
+            </div>
+          </div>
+        ))}
 
-</Carousel>
-<button onClick={()=>changeImage('plus')}>from====</button>
-<Slider {...settings}>
-<div className="flip-box">
-<div class="flip-box-inner">
-<img src={dubaitopview} class="img-width_1"/>
+      </Carousel>
+      <button onClick={() => changeImage('plus')}>from====</button>
+      <Slider {...settings}>
+        <div className="flip-box">
+          <div class="flip-box-inner">
+            <img src={dubaitopview} class="img-width_1" />
+          </div>
         </div>
-      </div>
-      <div className="flip-box">
-<div class="flip-box-inner">
-<img src={dubaitopview} class="img-width_2"/>
+        <div className="flip-box">
+          <div class="flip-box-inner">
+            <img src={dubaitopview} class="img-width_2" />
+          </div>
         </div>
-      </div>
-      <div className="flip-box">
-<div class="flip-box-inner">
-<img src={dubaitopview} class="img-width_3"/>
+        <div className="flip-box">
+          <div class="flip-box-inner">
+            <img src={dubaitopview} class="img-width_3" />
+          </div>
         </div>
-      </div>
-      <div className="flip-box">
-<div class="flip-box-inner">
-<img src={dubaitopview} class="img-width_4"/>
+        <div className="flip-box">
+          <div class="flip-box-inner">
+            <img src={dubaitopview} class="img-width_4" />
+          </div>
         </div>
-      </div>
-      <div className="flip-box">
-<div class="flip-box-inner">
-<img src={dubaitopview} class="img-width_5"/>
+        <div className="flip-box">
+          <div class="flip-box-inner">
+            <img src={dubaitopview} class="img-width_5" />
+          </div>
         </div>
-      </div>
-      <div className="flip-box">
-<div class="flip-box-inner">
-<img src={dubaitopview} class="img-width_1"/>
+        <div className="flip-box">
+          <div class="flip-box-inner">
+            <img src={dubaitopview} class="img-width_1" />
+          </div>
         </div>
-      </div>
-      <div className="flip-box">
-<div class="flip-box-inner">
-<img src={dubaitopview} class="img-width_2"/>
+        <div className="flip-box">
+          <div class="flip-box-inner">
+            <img src={dubaitopview} class="img-width_2" />
+          </div>
         </div>
-      </div>
-    </Slider>
-  );
+      </Slider>
+      );
 
-        </div >
-    )
+    </div >
+  )
 
 }

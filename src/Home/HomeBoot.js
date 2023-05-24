@@ -13,6 +13,7 @@ import Praposed_projects from "./Components/praposed_projects";
 import OurApproach from "./Components/OurApproach.js";
 import Header from "./Header_Footer/Header.js"
 import Footer from "./Header_Footer/Footer.js"
+import Zoom from 'react-reveal/Zoom';
 
 export function Homepage1() {
   const [blackMenu, setGoldmenu] = useState(false)
@@ -21,11 +22,11 @@ export function Homepage1() {
 
   }, [])
 
-  function isblackMenu(mes){
+  function isblackMenu(mes) {
     setGoldmenu(mes)
   }
   return (<div>
-     <Header/>
+    <Header />
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -41,15 +42,15 @@ export function Homepage1() {
           width: "100%",
           height: "781px",
         }}>
-         
+
         </div>
-        {/* <div class="carousel-item" style={{
+        <div class="carousel-item" style={{
        background: `url(${dubaitopview})`,
        backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         width: "100%",
-        height: "500px",
+        height: "781px",
      }}>
     </div>
     <div class="carousel-item" style={{
@@ -58,9 +59,9 @@ export function Homepage1() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         width: "100%",
-        height: "500px",
+        height: "781px",
      }}>
-    </div> */}
+    </div>
       </div>
       <div class="" style={{ display: "flex", justifyContent: 'center' }}>
         <div class={"col-md-3 col-xl-2 col-sm-4 col-lg-3 col-xs-3 curosalmoveallignment row justify-content-center"} data-bs-slide="prev">
@@ -79,13 +80,15 @@ export function Homepage1() {
       </div>
     </div>
     <div class="second-phase">
+    <Zoom right cascade>
       <p className="business-lines-heading">Business Lines</p>
+      </Zoom>
       <Graph />
     </div>
-    <Thired_phase/>
+    <Thired_phase />
     {/* <Praposed_projects/> */}
-    <OurApproach/>
-    <Footer/>
-   </div>
+    <OurApproach />
+    <Footer />
+  </div>
   );
 }

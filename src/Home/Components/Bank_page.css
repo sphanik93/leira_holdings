@@ -1,122 +1,136 @@
-.leira_bank{
+.leira_bank {
     /* position: absolute; */
-width: 269px;
-height: 102px;
-font-family: 'Avander';
-font-style: normal;
-font-weight: 400;
-font-size: 52px;
-line-height: 101px;
-color: #FFFFFF;
+    width: 269px;
+    height: 102px;
+    font-family: 'Avander';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 101px;
+    color: #FFFFFF;
 }
-.leira_bank_des{
+
+.leira_bank_des {
     /* position: absolute; */
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 44px;
-line-height: 43px;
-align-items: center;
-letter-spacing: 0.06em;
-color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 43px;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
 }
-.text-onBG{
-margin-top: 8%;
-margin-left: 8%;
-position: absolute;
-}
-.leira_bank_longdesc{
+
+.text-onBG {
+    margin-top: 8%;
+    margin-left: 8%;
     position: absolute;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 23px;
-align-items: center;
-letter-spacing: 0.08em;
-color: #FFFFFF;
 }
-.bank_img{
+
+.leira_bank_longdesc {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    align-items: center;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+}
+
+.bank_img {
     width: 472.93px;
     /* margin-top: 4%;
     margin-left: 5%; */
 }
-.bak_box{
+
+.bak_box {
     /* position: absolute; */
-width: 818px;
-height: 481px;
-background: #AA9063;
-border-radius: 8px;
-margin-top: -10%;
-display: grid;
+    width: 818px;
+    height: 481px;
+    background: #AA9063;
+    border-radius: 8px;
+    margin-top: -10%;
+    display: grid;
     align-items: center;
     justify-content: center;
 }
-.box_text{
+
+.box_text {
     /* position: absolute; */
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 600;
-font-size: 52px;
-line-height: 63px;
-/* display: contents; */
-align-items: center;
-color: #FFFFFF;
-margin: 10%
-}
-.banking_style{
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 600;
-font-size: 29px;
-line-height: 23px;
-align-items: center;
-letter-spacing: 1px;
-color: #000000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 63px;
+    /* display: contents; */
+    align-items: center;
+    color: #FFFFFF;
+    margin: 10%
 }
-.container_box{
+
+.banking_style {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 23px;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.container_box {
     margin-top: 4%;
     margin-left: 5%
 }
-#leirabankline{
+
+#leirabankline {
     font-size: 0;
     width: 8%;
     height: 3px;
     color: #fff;
     background-color: #AA9063;
 }
-.big_desc{
+
+.big_desc {
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 23px;
-align-items: center;
-letter-spacing: 1px;
-color: #000000;
-width: 95%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #000000;
+    width: 95%;
 }
-#line_div{
+
+#line_div {
     font-size: 0;
     width: 95%;
     height: 2px;
     color: #fff;
     background-color: #000000;
 }
-.social_icons{
+
+.social_icons {
     width: 36px;
     height: 35px;
 }
-.bak_box_mobile{
-    width: 610px;
-height: 481px;
-background: #AA9063;
-border-radius: 8px;
-/* margin-top: -5%; */
-display: grid;
+
+.bak_box_mobile {
+    width: 95%;
+    height: 481px;
+    background: #AA9063;
+    border-radius: 8px;
+    /* margin-top: -5%; */
+    display: grid;
     align-items: center;
     justify-content: center;
 }
-.bank_img_mobile{
+
+.bank_img_mobile {
     width: 94%;
 }

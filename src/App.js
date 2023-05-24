@@ -8,8 +8,8 @@ import './App.css';
 import { Homepage } from './Home/Homepage';
 import { Homepage1 } from './Home/HomeBoot';
 import { BankPage } from './Home/Components/Bank_page.js';
-import {Contact_Us} from './Home/Components/Contact_us.js';
-import {About_us} from './Home/Components/About.js'
+import { Contact_Us } from './Home/Components/Contact_us.js';
+import { About_us } from './Home/Components/About.js'
 
 function App() {
   return (

@@ -1,10 +1,11 @@
-.text-on_contact{
+.text-on_contact {
     /* bottom: 0; */
     position: absolute;
     margin-left: 5% !important;
     margin-top: 15%;
-    }
-.about_text{
+}
+
+.about_text {
     width: 269px;
     height: 102px;
     font-family: 'Avander';
@@ -13,9 +14,10 @@
     font-size: 52px;
     line-height: 101px;
     color: #FFFFFF;
-    }
-.about_welcome{
-        font-family: 'Roboto';
+}
+
+.about_welcome {
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
@@ -23,9 +25,10 @@
     align-items: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    }
-.labout_longdesc{
-        position: relative;
+}
+
+.labout_longdesc {
+    position: relative;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -35,10 +38,11 @@
     letter-spacing: 0.08em;
     color: #FFFFFF;
     width: 95%;
-    }
-    .text-on_contact1{
-        /* bottom: 0; */
-        position: absolute;
-        margin-left: 5% !important;
-        margin-top: 28%;
-        }
+}
+
+.text-on_contact1 {
+    /* bottom: 0; */
+    position: absolute;
+    margin-left: 5% !important;
+    margin-top: 28%;
+}
