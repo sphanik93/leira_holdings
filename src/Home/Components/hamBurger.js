@@ -5,8 +5,10 @@ import '../../Home/home.css'
 import facebook from "../../assets/a.facebook.png";
 import twitter from "../../assets/a.twitter.png";
 import instagram from "../../assets/a.instagram.png";
+import { useNavigate } from 'react-router-dom';
 
 export default function Hamburger(props) {
+  let navigate = useNavigate();
   const [businessLines, setBusinessLines] = useState([])
   const [expanding, setExpanding] = useState(false)
   const [projectexpand, setProjectexpand] = useState(false)
@@ -23,6 +25,18 @@ export default function Hamburger(props) {
     projectexpand ? setProjectexpand(false) : setProjectexpand(true)
   }
   function selectingMenu(e) {
+    console.log(e.target.innerText,'eeee',e)
+    if(e.target.innerText == 'HOME'){
+      navigate('/');
+    }
+    if(e.target.innerText == 'ABOUT'){
+      navigate('/AboutUs')
+    }
+    if(e.target.innerText == 'CONTACT US'){
+      navigate('/contactUs')
+    }
+
+    if(e.target.innerText != 'CONTACT US')
     setSelectedMenu(e.target.innerText)
   }
   return (
@@ -57,7 +71,7 @@ export default function Hamburger(props) {
             </>}
           </div>
           <div className="mt-5 model-footer ml-5">
-            <button type="button" class="btn btn-warning">CONTACT US</button>
+            <button type="button" class="btn btn-warning" onClick={(e)=>selectingMenu(e)}>CONTACT US</button>
             <div className="d-flex">
               <img src={instagram} className="social-icons" />
               <img src={facebook} className="social-icons ml-3" />

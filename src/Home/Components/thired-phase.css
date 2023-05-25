@@ -1,11 +1,13 @@
 .arrow-left {
     /* width: 65px !important; */
     height: fit-content;
+    cursor: pointer;
 }
 
 .arrow-right {
     /* width: 65px !important; */
     height: fit-content;
+    cursor: pointer;
 }
 
 .arrow-left:hover {

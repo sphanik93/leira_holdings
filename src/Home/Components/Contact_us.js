@@ -8,7 +8,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import map from "../../assets/map.png"
 import phone_ring from '../../assets/call.png'
 import mail_icon from '../../assets/mail.png'
-import Zoom from 'react-reveal/Zoom';
+import {Zoom, Bounce} from 'react-reveal';
 import MediaQuery from "react-responsive";
 
 export function Contact_Us(props) {
@@ -72,12 +72,13 @@ export function Contact_Us(props) {
                     height: "450px",
                 }}>
                     <div className="circle_square_box">
+                    <Bounce bottom cascade>
                         <p className="box_text_heading">Leira Holdings Corporate Office</p>
                         <p className="box_text_address">Umm Suqeim RoadP.O. Box 66000Dubai,</p>
                         <p className="box_text_address1"> United Arab Emirates</p>
                         <p className="box_text_address mt-5"><img src={phone_ring} className="address_contact_icon mr-2" />(+971) - 8829921232</p>
                         <p className="box_text_address1"><img src={mail_icon} className="address_contact_icon mr-2" />support@leiraholding.com</p>
-                        <p></p>
+                    </Bounce>
                     <div className="circle_map "></div>
                     </div>
                 </div>

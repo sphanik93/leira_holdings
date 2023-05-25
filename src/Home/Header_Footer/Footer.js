@@ -11,8 +11,10 @@ import linkedin from '../../assets/a.linkedin.png'
 import arrow from '../../assets/Arrow1.png'
 import MediaQuery from "react-responsive";
 import "../../Home/home.css"
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
+    let navigate = useNavigate();
 
 
     return (
@@ -23,11 +25,11 @@ export default function Footer() {
                         <img src={logo} className="footerlogo" />
                         <div className="d-flex flex-column">
                             <div className="d-flex justify-content-around mt-5" id="box-footer">
-                                <div>Home</div>
-                                <div>About Us</div>
-                                <div>Business Lines</div>
-                                <div>Projects</div>
-                                <div>Approach</div>
+                                <div onClick={() => navigate('/')} className="cursoerNav">Home</div>
+                                <div onClick={() => navigate('/AboutUs')} className="cursoerNav">About Us</div>
+                                <div className="cursoerNav">Business Lines</div>
+                                <div className="cursoerNav">Projects</div>
+                                <div className="cursoerNav">Approach</div>
                             </div>
                             <div className="d-flex justify-content-around mt-4" id="box-footer">
                                 <div><img src={phone_ring} className="navbar-icons mr-2" />(+971) - 8829921232</div>
@@ -60,11 +62,11 @@ export default function Footer() {
                     <div className="d-flex flex-column mobile-footer">
                         <img src={logo} className="footerlogo_mobile" />
 
-                        <div>Home</div>
-                        <div>About Us</div>
-                        <div>Business Lines</div>
-                        <div>Projects</div>
-                        <div>Approach</div>
+                        <div onClick={() => navigate('/')} className="cursoerNav">Home</div>
+                        <div onClick={() => navigate('/AboutUs')} className="cursoerNav">About Us</div>
+                        <div className="cursoerNav">Business Lines</div>
+                        <div className="cursoerNav">Projects</div>
+                        <div className="cursoerNav">Approach</div>
                         <div><img src={phone_ring} className="mobil-footer-img mr-2" />(+971) - 8829921232</div>
                         <div><img src={mail_icon} className="mobil-footer-img mr-2" />support@leiraholding.com</div>
                         <div className="mt-4">

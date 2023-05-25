@@ -21,6 +21,7 @@
     text-indent: -1015px;
     background-color: #FFFFFF;
 }
+
 .carousel-indicators {
     position: absolute;
     right: 0;
@@ -51,6 +52,7 @@
     border-radius: 50% !important;
     text-indent: -1015px;
     background-color: #AA9063 !important;
+    margin-top: 1px;
 }
 
 .carousel-next-icon,
@@ -286,6 +288,7 @@ button.close {
     align-items: center;
     letter-spacing: 1.6px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .model-body-text-selected {
@@ -298,6 +301,7 @@ button.close {
     letter-spacing: 1.6px;
     text-transform: uppercase;
     color: #AA9063;
+    cursor: pointer;
 }
 
 .plusiconsrc {
@@ -552,6 +556,7 @@ button.close {
 
 .navbar-social-icons {
     width: 20%;
+    cursor: pointer;
 }
 
 .newsletter {
@@ -606,12 +611,43 @@ button.close {
     border-radius: 33px;
 }
 
-.path {
-    position: fixed;
-    margin-left: 8%;
-    margin-top: 2%;
-}
-
 .navbar-social-icons_mobile {
     width: 10%;
+    cursor: pointer;
+}
+
+.readmore {
+    position: relative;
+    margin-top: 11px;
+    margin-bottom: 17px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    align-items: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+}
+
+.cursoerNav{
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .path {
+        position: fixed;
+        margin-left: 13%;
+        margin-top: 4%;
+    }
+}
+
+@media (min-width: 767px) {
+    .path {
+        position: fixed;
+        margin-left: 8%;
+        margin-top: 2%;
+    }
 }

@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import { Homepage } from './Home/Homepage';
-import { Homepage1 } from './Home/HomeBoot';
+import { Homepage1 } from './Home/Home';
 import { BankPage } from './Home/Components/Bank_page.js';
 import { Contact_Us } from './Home/Components/Contact_us.js';
 import { About_us } from './Home/Components/About.js'
@@ -14,7 +14,7 @@ import { About_us } from './Home/Components/About.js'
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename='/dist'>
         <Routes>
           <Route exact path="/" element={<Homepage1 />} />
           <Route exact path="/homapage" element={<Homepage />} />
