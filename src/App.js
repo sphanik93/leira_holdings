@@ -14,7 +14,7 @@ import { About_us } from './Home/Components/About.js'
 function App() {
   return (
     <div className="App">
-      <Router basename='/dist'>
+      <Router>
         <Routes>
           <Route exact path="/" element={<Homepage1 />} />
           <Route exact path="/homapage" element={<Homepage />} />

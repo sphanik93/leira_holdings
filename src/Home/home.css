@@ -318,6 +318,7 @@ button.close {
     line-height: 15px;
     width: max-content;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .business-lines-selected {
@@ -330,6 +331,7 @@ button.close {
     width: max-content;
     text-transform: uppercase;
     color: #AA9063;
+    cursor: pointer;
 }
 
 .model-footer {
@@ -361,7 +363,7 @@ button.close {
     font-family: 'Avander';
     font-style: normal;
     font-weight: 400;
-    font-size: 52px;
+    font-size: 43px;
     line-height: 101px;
     display: flex;
     align-items: center;

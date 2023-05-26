@@ -55,14 +55,24 @@ export function Contact_Us(props) {
                         </div>
                         <textarea id="w3review" name="w3review" rows="6" cols="50" className="mt-5" placeholder="Message">
                         </textarea>
+                        <MediaQuery minWidth={381}>
                         <div className="mt-5 d-flex justify-content-between">
                             <ReCAPTCHA
                                 sitekey="Your client site key"
                             // onChange={onChange}
                             />
                             <button class="btn" type="submit" className="send_btn">SEND</button>
-
                         </div>
+                        </MediaQuery>
+                        <MediaQuery maxWidth={380}>
+                        <div className="mt-5">
+                            <ReCAPTCHA
+                                sitekey="Your client site key"
+                            // onChange={onChange}
+                            />
+                            <button class="btn" type="submit" className="send_btn">SEND</button>
+                        </div>
+                        </MediaQuery>
                     </div>
                 </div>
 

@@ -35,6 +35,9 @@ export default function Hamburger(props) {
     if(e.target.innerText == 'CONTACT US'){
       navigate('/contactUs')
     }
+    if(e.target.innerText == 'FINANCIAL SERVICES'){
+      navigate('/leirabank')
+    }
 
     if(e.target.innerText != 'CONTACT US')
     setSelectedMenu(e.target.innerText)

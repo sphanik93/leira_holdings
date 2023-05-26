@@ -73,7 +73,7 @@
 }
 
 .contact_input_box2 {
-    width: 170px;
+    width: 26%;
     height: 35px;
     background: #FFFFFF;
     border: 0.681522px solid #828282;
@@ -104,14 +104,6 @@
     margin-left: 45%;
 }
 
-.circle_square_box {
-    background-color: #000000;
-    width: 338px;
-    height: 188px;
-    border: 6px solid #AA9063;
-    margin-top: 17%;
-    margin-left: 8%;
-}
 .circle_square_box:hover{
     transform: scale(1.2);
 }
@@ -164,5 +156,36 @@
 @media screen and (max-width: 767px) {
     .flexing{
         /* display: flex; */
+    }
+}
+
+@media screen and (min-device-width: 1029px) {
+    .circle_square_box {
+        background-color: #000000;
+        width: 58%;
+        height: 188px;
+        border: 6px solid #AA9063;
+        margin-top: 17%;
+        margin-left: 8%;
+    }
+    }
+@media screen and (max-width: 588px) {
+    .circle_square_box {
+        background-color: #000000;
+        width: 85%;
+        height: 188px;
+        border: 6px solid #AA9063;
+        margin-top: 17%;
+        margin-left: 8%;
+    }
+    }
+@media only screen and (max-width: 1028px) and (min-width: 588px)  {
+    .circle_square_box {
+        background-color: #000000;
+        width: 80%;
+        height: 188px;
+        border: 6px solid #AA9063;
+        margin-top: 17%;
+        margin-left: 8%;
     }
 }
