@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import invertinginfuture from "../../assets/Invest-in-future.png";
+import investmentinfuture3d from "../../assets/Invest_in_future_3D.png";
 import dubaitopview from '../../assets/top-view-dubai.png';
 import "./thired-phase.css"
 import $ from 'jquery';
@@ -47,7 +48,7 @@ export default function Thired_phase() {
       }
     }
   }
-  return (<div className="mb-5">
+  return (<div className="mb-5 third_banner">
     <div id="carousel2ExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
       {/* <div class="carousel-indicators">
        <button type="button" data-bs-target="#carousel2ExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</button>
@@ -59,144 +60,122 @@ export default function Thired_phase() {
         <div class="carousel-item active">
           <div className="thired-phase">
           <Zoom right cascade>
-            <p className="business-lines-heading">Invest in Future</p>
+            <p className="business-lines-heading1 mt-5">Invest in Future</p>
             </Zoom>
             <div className="row">
             <Fade right>
-              <img src={invertinginfuture} className="invest-in-future-img col-xs-12 col-md-5" />
+              <div className=" col-xs-12 col-md-4 ml-5">
+              <img src={investmentinfuture3d} className="invest-in-future-img1 ml-5" />
+              </div>
             </Fade>
-              <div className="col-md-6">
-                <p className="invest-in-future-heading">Leira future Smart City</p>
+              <div className="col-md-6 ml-5 spaceing1 mt-5">
+                {/* <p className="invest-in-future-subheading">Leira future Smart City</p> */}
                 <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
 
-                <p className="decisioning">Invest using Traditional Currency</p>
-                <div class="d-flex justify-content-between">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{ width: "25%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <button type="button" class="btn btn-dark invest-button">Invest</button>
-                </div>
-
-                <p className="decisioning">Invest using LeiraCoin Crypto Currency</p>
-                <div class="d-flex justify-content-between">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <button type="button" class="btn btn-dark invest-button">Invest</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div className="thired-phase">
-            <p className="business-lines-heading">Invest in Future</p>
-            <div className="row">
-            <Fade right>
-              <img src={invertinginfuture} className="invest-in-future-img col-xs-12 col-md-5" />
-              </Fade>
-              <Fade right>
-              <div className="col-md-6">
-                <p className="invest-in-future-heading">Leira future Smart City</p>
-                <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
-
-                <p className="decisioning">Invest using Traditional Currency</p>
-                <div class="d-flex justify-content-between">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{ width: "25%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <button type="button" class="btn btn-dark invest-button">Invest</button>
-                </div>
-                <p className="decisioning">Invest using LeiraCoin Crypto Currency</p>
-                <div class="d-flex justify-content-between">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <button type="button" class="btn btn-dark invest-button">Invest</button>
-                </div>
-              </div>
-                </Fade>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div className="thired-phase">
-          <Zoom right cascade>
-            <p className="business-lines-heading">Invest in Future</p>
-            </Zoom>
-            <div className="row">
-            <Fade right>
-              <img src={invertinginfuture} className="invest-in-future-img col-xs-12 col-md-5" />
-              </Fade>
-              <Fade right>
-              <div className="col-md-6">
-                <p className="invest-in-future-heading">Leira future Smart City</p>
-                <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
-
-                <p className="decisioning">Invest using Traditional Currency</p>
-                <div class="d-flex justify-content-between">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{ width: "25%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <button type="button" class="btn btn-dark invest-button">Invest</button>
-                </div>
-
-                <p className="decisioning">Invest using LeiraCoin Crypto Currency</p>
-                <div class="d-flex justify-content-between">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <button type="button" class="btn btn-dark invest-button">Invest</button>
-                </div>
-              </div>
-              </Fade>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div className="thired-phase">
-          <Zoom right cascade>
-            <p className="business-lines-heading">Invest in Future</p>
-            </Zoom>
-            <div className="row">
-            <Fade right>
-              <img src={invertinginfuture} className="invest-in-future-img col-xs-12 col-md-5" />
-              </Fade>
-              <Fade right>
-              <div className="col-md-6">
-                <p className="invest-in-future-heading">Leira future Smart City</p>
-                <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
-
-                <p className="decisioning">Invest using Traditional Currency</p>
-                <div class="d-flex justify-content-between">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{ width: "25%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <button type="button" class="btn btn-dark invest-button">Invest</button>
-                </div>
-
-                <p className="decisioning">Invest using LeiraCoin Crypto Currency</p>
-                <div class="d-flex justify-content-between">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <button type="button" class="btn btn-dark invest-button">Invest</button>
-                </div>
-              </div>
-              </Fade>
-            </div>
-          </div>
-        </div>
+                <div class="mt-5 d-flex flex-column" style={{ display: "" }}>
+      <div class={""}>
+      <a href="#carousel2ExampleIndicators" role="button" data-slide="prev"><img src={arrowleft} class="arrow-left" title="" onClick={()=>nextIndicater('prev')}/></a>
+        <span class="count_div ml-3 mr-3">{current} / {totalItems}</span>
+        <a href="#carousel2ExampleIndicators" role="button" data-slide="next"><img src={arrowright} class="arrow-right" title="" onClick={()=>nextIndicater('next')}/></a>
       </div>
+      <button type="button" class="btn read_more mt-5">Read More</button>
     </div>
-    <div class="" style={{ display: "flex", justifyContent: 'center' }}>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+        <div className="thired-phase">
+          <Zoom right cascade>
+            <p className="business-lines-heading1 mt-5">Invest in Future</p>
+            </Zoom>
+            <div className="row">
+            <Fade right>
+              <div className=" col-xs-12 col-md-4 ml-5">
+              <img src={invertinginfuture} className="invest-in-future-img1 ml-5" />
+              </div>
+            </Fade>
+              <div className="col-md-6 ml-5 spaceing">
+                <p className="invest-in-future-subheading">Leira future Smart City</p>
+                <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
+
+                <p className="decisioning">Invest using Traditional Currency</p>
+                <div class="d-flex justify-content-between">
+                  <div class="progress mr-5">
+                    <div class="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <button type="button" class="btn btn-dark invest-button">Invest</button>
+                </div>
+                    <div className="decission ml-2">Decisioning 79%</div>
+
+                <p className="decisioning">Invest using LeiraCoin Crypto Currency</p>
+                <div class="d-flex justify-content-between">
+                  <div class="progress mr-5">
+                    <div class="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <button type="button" class="btn btn-dark invest-button">Invest</button>
+                </div>
+                <div className="decission ml-2">Decisioning 90%</div>
+                <div class="mt-5 mb-4" style={{ display: "flex" }}>
       <button type="button" class="btn read_more">Read More</button>
-      <div class={"col-md-3 col-xl-2 col-sm-4 col-lg-3 col-xs-3 d-flex justify-content-between"}>
+      <div class={"col-md-4 col-xl-3 col-sm-5 col-lg-4 col-xs-4 d-flex justify-content-between"}>
       <a href="#carousel2ExampleIndicators" role="button" data-slide="prev"><img src={arrowleft} class="arrow-left" title="" onClick={()=>nextIndicater('prev')}/></a>
         <span class="count_div">{current} / {totalItems}</span>
         <a href="#carousel2ExampleIndicators" role="button" data-slide="next"><img src={arrowright} class="arrow-right" title="" onClick={()=>nextIndicater('next')}/></a>
       </div>
     </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+        <div className="thired-phase">
+          <Zoom right cascade>
+            <p className="business-lines-heading1 mt-5">Invest in Future</p>
+            </Zoom>
+            <div className="row">
+            <Fade right>
+              <div className=" col-xs-12 col-md-4 ml-5">
+              <img src={invertinginfuture} className="invest-in-future-img1 ml-5" />
+              </div>
+            </Fade>
+              <div className="col-md-6 ml-5 spaceing">
+                <p className="invest-in-future-subheading">Leira future Smart City</p>
+                <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
+
+                <p className="decisioning">Invest using Traditional Currency</p>
+                <div class="d-flex justify-content-between">
+                  <div class="progress mr-5">
+                    <div class="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <button type="button" class="btn btn-dark invest-button">Invest</button>
+                </div>
+                    <div className="decission ml-2">Decisioning 79%</div>
+
+                <p className="decisioning">Invest using LeiraCoin Crypto Currency</p>
+                <div class="d-flex justify-content-between">
+                  <div class="progress mr-5">
+                    <div class="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <button type="button" class="btn btn-dark invest-button">Invest</button>
+                </div>
+                <div className="decission ml-2">Decisioning 90%</div>
+                <div class="mt-5 mb-4" style={{ display: "flex" }}>
+      <button type="button" class="btn read_more">Read More</button>
+      <div class={"col-md-4 col-xl-3 col-sm-5 col-lg-4 col-xs-4 d-flex justify-content-between"}>
+      <a href="#carousel2ExampleIndicators" role="button" data-slide="prev"><img src={arrowleft} class="arrow-left" title="" onClick={()=>nextIndicater('prev')}/></a>
+        <span class="count_div">{current} / {totalItems}</span>
+        <a href="#carousel2ExampleIndicators" role="button" data-slide="next"><img src={arrowright} class="arrow-right" title="" onClick={()=>nextIndicater('next')}/></a>
+      </div>
+    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+
   </div>
 
   )

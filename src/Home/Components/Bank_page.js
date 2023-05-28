@@ -26,7 +26,7 @@ export function BankPage() {
                 backgroundRepeat: "no-repeat",
                 width: "100%",
                 height: "668px",
-                marginTop: '87px'
+                // marginTop: '87px'
             }}>
                 <LightSpeed left cascade>
                 <div className="text-onBG">

@@ -9,6 +9,7 @@ import {Zoom, Flip} from 'react-reveal';
 
 export default function OurApproach() {
     const [tabList, setTabList] = useState([])
+    const [listSelected, setListedSelected] = useState('values that matter')
     const forceUpdate = React.useReducer(bool => !bool)[1];
 
     useEffect(() => {
@@ -44,6 +45,11 @@ export default function OurApproach() {
         forceUpdate();
 
     }
+
+    function changeType(type){
+            setListedSelected(type)
+    }
+
     console.log('tablist', tabList)
     return (
         <div>
@@ -57,17 +63,23 @@ export default function OurApproach() {
                     </div>
                     <div className="mt-5 ml-5 d-flex justify-content-between">
                         <div className="mt-5">
-                            <p className="objective mt-5">Objective</p>
-                            <p className="ourapproach_matter ">Values that matter</p>
+                            <p className={listSelected == "objective"?"ourapproach_matter mt-5":"objective mt-5"} onClick={()=>changeType('objective')}>Objective</p>
+                            <p className={listSelected == 'values that matters' ? "ourapproach_matter mt-4": "objective mt-4"} onClick={()=>changeType('values that matters')}>Values that matter</p>
                             <div className="d-flex">
-                                <div id="hline-1"></div>
+                                <div id={listSelected == "objective"? "hline-2" :"hline-1"}></div>
                                 <div className="square">
                                 <Flip right cascade>
+                                    {listSelected == "values that matters"?
                                     <div className="m-3">
                                         <p className="square_font-size">We recognize the importance of managing our resources responsibly and minimizing our impact on the environment. We are committed to promoting sustainability both within our organization and in the solutions, we provide to our clients.</p>
 
                                         <p className="square_font-size">These values reflect our commitment to providing exceptional service, operating with integrity and transparency, working collaboratively, embracing innovation, and promoting sustainability.</p>
-                                    </div>
+                                    </div>:
+                                    <div className="m-3">
+                                    <p className="square_font-size">Objective description will come here</p>
+
+                                    <p className="square_font-size">These values reflect our commitment to providing exceptional service, operating with integrity and transparency, working collaboratively, embracing innovation, and promoting sustainability.</p>
+                                </div>}
                                 </Flip>
                                 </div>
                             </div>

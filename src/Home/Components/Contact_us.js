@@ -24,7 +24,7 @@ export function Contact_Us(props) {
                 backgroundRepeat: "no-repeat",
                 width: "100%",
                 height: "668px",
-                marginTop: '87px'
+                // marginTop: '87px'
             }}>
                  <Zoom left cascade>
                 <div className="text-onBG_contact mr-5">
@@ -35,11 +35,11 @@ export function Contact_Us(props) {
             </div>
             <div className="flexing mb-5">
                 <div className="col-md-1"></div>
-                <div className="col-md-5 mt-5">
+                <div className="col-md-5 mt-5" style={{position: 'inherit'}}>
                     <p className="enquiry_heading">Please select an enquiry type before completing
                         the form below.</p>
                     <div className="d-flex flex-column">
-                        <div className="d-flex justify-content-between">
+                        <div className="d-flex justify-content-between div-type-width">
                             <button class={!buttonSelect[0] ? "btn contact_type_btn" : "btn contact_type_btn_select"} type="submit" onClick={() => setButtonSelect([true, false, false])}>GENERAL</button>
                             <button class={!buttonSelect[1] ? "btn contact_type_btn" : "btn contact_type_btn_select"} type="submit" onClick={() => setButtonSelect([false, true, false])}>INVESTOR</button>
                             <button class={!buttonSelect[2] ? "btn contact_type_btn" : "btn contact_type_btn_select"} type="submit" onClick={() => setButtonSelect([false, false, true])}>MEDIA</button>
@@ -53,7 +53,7 @@ export function Contact_Us(props) {
                             <input type="text" className="contact_input_box2" placeholder="Ph no." />
                             <input type="text" className="contact_input_box2" placeholder="Organization" />
                         </div>
-                        <textarea id="w3review" name="w3review" rows="6" cols="50" className="mt-5" placeholder="Message">
+                        <textarea id="w3review" name="w3review" rows="8" cols="50" className="mt-5" placeholder="Message">
                         </textarea>
                         <MediaQuery minWidth={381}>
                         <div className="mt-5 d-flex justify-content-between">
@@ -80,6 +80,7 @@ export function Contact_Us(props) {
                     background: `url(${map})`,
                     width: "100%",
                     height: "450px",
+                    position: 'inherit'
                 }}>
                     <div className="circle_square_box">
                     <Bounce bottom cascade>

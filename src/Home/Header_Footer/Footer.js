@@ -67,12 +67,12 @@ export default function Footer() {
                         <div className="cursoerNav">Business Lines</div>
                         <div className="cursoerNav">Projects</div>
                         <div className="cursoerNav">Approach</div>
-                        <div><img src={phone_ring} className="mobil-footer-img mr-2" />(+971) - 8829921232</div>
+                        <div className="mt-4"><img src={phone_ring} className="mobil-footer-img mr-2" />(+971) - 8829921232</div>
                         <div><img src={mail_icon} className="mobil-footer-img mr-2" />support@leiraholding.com</div>
                         <div className="mt-4">
                             © 2023 LEIRA. Design & Developed by Eterna
                         </div>
-                        <div className="d-flex justify-content-between">
+                        <div className="d-flex justify-content-between setwidthflex mt-5">
                             <img src={twitter} className="navbar-social-icons_mobile" />
                             <img src={facebook} className="navbar-social-icons_mobile" />
                             <img src={insta} className="navbar-social-icons_mobile" />
@@ -80,7 +80,7 @@ export default function Footer() {
                             <img src={linkedin} className="navbar-social-icons_mobile" />
                         </div>
                         <span className="newsletter">Newsletter</span>
-                        <div className="ml-2">
+                        <div className="">
                             <input type="" className="newsletter_input_mobile" /><img src={arrow} className="newsletter_arrow" />
                         </div>
                     </div>

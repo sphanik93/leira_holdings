@@ -78,3 +78,45 @@
     opacity: 1;
     /* right: 0; */
   }
+
+  .invest-in-future-img1 {
+    /* width: 1057.78px; */
+    /* height: 595px; */
+    margin-left: 3%;
+}
+.spaceing{
+  margin-left: 5% !important;
+}
+
+.spaceing1{
+  margin-left: 5% !important;
+  margin-top: 6% !important;
+}
+.invest-in-future-subheading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 101px;
+  align-items: center;
+  /* text-align: center; */
+  letter-spacing: 0.08em;
+  color: #000000;
+}
+
+.decission{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+/* line-height: 101px; */
+align-items: center;
+/* text-align: center; */
+letter-spacing: 0.08em;
+color: #AB8F67;
+
+}
+
+.third_banner{
+  /* height: 700px; */
+}

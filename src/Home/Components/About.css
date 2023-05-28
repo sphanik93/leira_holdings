@@ -23,6 +23,11 @@
     margin-top: 28%;
 }
 
+.scroll-class {
+    background-color: none;
+
+}
+
 @media screen and (max-width: 540px) {
 .about_welcome {
     font-family: 'Roboto';

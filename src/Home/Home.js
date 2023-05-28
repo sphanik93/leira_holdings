@@ -9,6 +9,7 @@ import Thired_phase from "./Components/thired_phase.js";
 import Praposed_projects from "./Components/praposed_projects";
 import OurApproach from "./Components/OurApproach.js";
 import Header from "./Header_Footer/Header.js"
+import Header_mainpage from "./Header_Footer/Header_mainpage.js";
 import Footer from "./Header_Footer/Footer.js"
 import Zoom from 'react-reveal/Zoom';
 
@@ -19,11 +20,17 @@ export function Homepage1() {
 
   }, [])
 
-  function isblackMenu(mes) {
-    setGoldmenu(mes)
-  }
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 0) {
+      console.log('inside scroll',window.pageYOffset)
+    }else{
+      console.log('inside not scroll',window.pageYOffset)
+    }
+  })
+
   return (<div>
-    <Header />
+    {/* <Header /> */}
+    <Header_mainpage/>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

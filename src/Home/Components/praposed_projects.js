@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import dubaitopview from '../../assets/top-view-dubai.png'
-import bank from '../../assets/bank.png'
+import bank from '../../assets/bank_caurosal.jpeg'
 import Contact_us from '../../assets/Contact_us.png'
 import NOSECTION from '../../assets/NOSECTION.png'
 import Holdings from '../../assets/Holdings.png'
@@ -129,12 +129,12 @@ console.log('photoupdtaed',photo)
           </div>
         </div>
         <div className="flip-box">
-          <div class="flip-box-inner_2">
+          <div class="flip-box-inner_2 ml-3">
             <img src={getimage(2)} class="img-width_2" />
           </div>
         </div>
         <div className="flip-box">
-          <div class="flip-box-inner_3">
+          <div class="flip-box-inner_3 ml-4">
             <img src={getimage(3)} class="img-width_3" />
             <div className="mt-5">
             <p className="heading_tag">{headings}</p>
@@ -157,7 +157,7 @@ console.log('photoupdtaed',photo)
         </HeadShake>
         <div className="move_buttons">
         <img src={arrowleft} class="arrow-left" title="" onClick={()=>moveimage('next')}/>
-        <img src={arrowright} class="arrow-right" title="" onClick={()=>moveimage('prev')}/>
+        <img src={arrowright} class="arrow-right ml-3" title="" onClick={()=>moveimage('prev')}/>
         </div>
         <div className="buttons_count">
         <p className="counting">{originalId }/{ photo.length}</p>
@@ -177,8 +177,8 @@ console.log('photoupdtaed',photo)
           </div>
         </div> */}
         <div className="flip-box">
-          <div class="flip-box-inner_3">
-            <img src={getimage(2)} class="img-width_3" />
+          <div class="flip-box-inner_3 ml-4">
+            <img src={getimage(2)} class="img-width_3_2" />
             <div className="mt-5">
             <p className="heading_tag">{headings}</p>
             <p className="description">{description}</p>
@@ -199,7 +199,7 @@ console.log('photoupdtaed',photo)
         </div>
         <div className="move_buttons">
         <img src={arrowleft} class="arrow-left" title="" onClick={()=>moveimage('next')}/>
-        <img src={arrowright} class="arrow-right" title="" onClick={()=>moveimage('prev')}/>
+        <img src={arrowright} class="arrow-right ml-3" title="" onClick={()=>moveimage('prev')}/>
         </div>
         <div className="buttons_count">
         <p className="counting">{originalId }/{ photo.length}</p>

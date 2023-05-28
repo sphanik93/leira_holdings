@@ -45,6 +45,16 @@
     margin-top: -13%; */
     /* margin:auto; */
 }
+#hline-2 {
+    font-size: 0;
+    width: 291px;
+    height: 2px;
+    color: #fff;
+    background-color: #AA9063;
+    /* margin-left: 20%; */
+    margin-top: -14%;
+    /* margin:auto; */
+}
 
 .square {
     width: 41%;

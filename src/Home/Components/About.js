@@ -8,21 +8,58 @@ import smartgreen from "../../assets/smartgreen.png"
 import './About.css'
 import MediaQuery from "react-responsive";
 import {Bounce} from 'react-reveal/';
+import $ from 'jquery';
+
 
 export function About_us() {
 
 
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 490) {
+          console.log('insidescrolling',window.pageYOffset)
+          $(".scroll-class").css("-webkit-filter" , "grayscale(100%)");
+        } else{
+            console.log('inside not',window.pageYOffset)
+          $(".scroll-class").css("-webkit-filter" , "grayscale(0%)");
+        } 
+         if (window.pageYOffset > 0 && this.window.pageYOffset < 550) {
+            console.log('insidescrolling',window.pageYOffset)
+          $(".scroll-class1").css("-webkit-filter" , "grayscale(100%)");
+        }  else{
+            console.log('inside not',window.pageYOffset)
+            $(".scroll-class1").css("-webkit-filter" , "grayscale(0%)");
+          }
+         if (window.pageYOffset > 1156 && this.window.pageYOffset < 1247) {
+            console.log('insidescrolling',window.pageYOffset)
+          $(".scroll-class1").css("-webkit-filter" , "grayscale(100%)");
+          $(".scroll-class2").css("-webkit-filter" , "grayscale(100%)");
+        }  else{
+            console.log('inside not',window.pageYOffset)
+            $(".scroll-class1").css("-webkit-filter" , "grayscale(0%)");
+          $(".scroll-class2").css("-webkit-filter" , "grayscale(0%)");
+          }
+         if (window.pageYOffset > 1720) {
+            console.log('insidescrolling',window.pageYOffset)
+          $(".scroll-class1").css("-webkit-filter" , "grayscale(100%)");
+          $(".scroll-class2").css("-webkit-filter" , "grayscale(100%)");
+        } else{
+          console.log('inside not',window.pageYOffset)
+          $(".scroll-class1").css("-webkit-filter" , "grayscale(0%)");
+          $(".scroll-class2").css("-webkit-filter" , "grayscale(0%)");
+        }
+      })
+
     return (
         <div className="">
             <Header path={'HOME'} page={'/ ABOUT'} />
-            <div class="" style={{
+            <div class="scroll-class" style={{
                 background: `url(${leira_holding})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 width: "100%",
                 height: "668px",
-                marginTop: '87px'
+                // marginTop: '87px'
             }}>
                 <Bounce left cascade>
                 <div className="text-on_contact">
@@ -34,7 +71,7 @@ export function About_us() {
                 </Bounce>
             </div>
 
-            <div class="" style={{
+            <div class="scroll-class1" style={{
                 background: `url(${env_friendly})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
@@ -52,7 +89,7 @@ export function About_us() {
                 </Bounce>
             </div>
 
-            <div class="" style={{
+            <div class="scroll-class2" style={{
                 background: `url(${smartgreen})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
