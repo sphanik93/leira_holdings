@@ -5,7 +5,7 @@ import bank from '../../assets/bank_caurosal.jpeg'
 import Contact_us from '../../assets/Contact_us.png'
 import NOSECTION from '../../assets/NOSECTION.png'
 import Holdings from '../../assets/Holdings.png'
-import leiralogo from '../../assets/leiralogo-04.png'
+import leiralogo from '../../assets/leiralogo.png'
 import second from '../../assets/second-layer.png'
 import logo from '../../assets/enveronmental_friendly.png'
 import arrowright from "../../assets/icons-right.png";
@@ -213,7 +213,7 @@ console.log('photoupdtaed',photo)
             <img src={getimage(1)} class="img-width_3" />
             <div className="mt-5">
             <p className="heading_tag">{headings}</p>
-            <p className="description mt-5">{description}</p>
+            <p className="description mt-5 m-4">{description}</p>
             <div style={{display: 'flex',justifyContent: 'center'}}>
             <button type="button" class="btn see_all_stories">SEE ALL STORIES</button>
             </div>

@@ -14,7 +14,7 @@ export default function OurApproach() {
 
     useEffect(() => {
         let data = [{
-            name: "More Human Like", image: NOSECTION, text: "Welcome Tomorrow Our Chatbots are designed for tomorrow’s world. ", heading: "MORE HUMAN LIKE",
+            name: "More Human Like", image: NOSECTION, text: "We recognize the importance of managing our resources responsibly and minimizing our impact on the environment. We are committed to promoting sustainability both within our organization and in the solutions, we provide to our clients. These values reflect our commitment to providing exceptional service, operating with integrity and transparency, working collaboratively, embracing innovation, and promoting sustainability.", heading: "MORE HUMAN LIKE",
             status: true
         }, {
             name: "Integration", image: NOSECTION, text: "Hii ", heading: "MORE HUMAN LIKE",

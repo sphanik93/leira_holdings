@@ -96,11 +96,11 @@ export default function Thired_phase() {
               </div>
             </Fade>
               <div className="col-md-6 ml-5 spaceing">
-                <p className="invest-in-future-subheading">Leira future Smart City</p>
-                <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
+                <p className="invest-in-future-subheading mb-5 mt-5">Leira future Smart City</p>
+                <p className="invest-in-future-text m-2">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
 
                 <p className="decisioning">Invest using Traditional Currency</p>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between m-2">
                   <div class="progress mr-5">
                     <div class="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
@@ -109,7 +109,7 @@ export default function Thired_phase() {
                     <div className="decission ml-2">Decisioning 79%</div>
 
                 <p className="decisioning">Invest using LeiraCoin Crypto Currency</p>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between m-2">
                   <div class="progress mr-5">
                     <div class="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
@@ -140,7 +140,7 @@ export default function Thired_phase() {
               </div>
             </Fade>
               <div className="col-md-6 ml-5 spaceing">
-                <p className="invest-in-future-subheading">Leira future Smart City</p>
+                <p className="invest-in-future-subheading mb-5 mt-5">Leira future Smart City</p>
                 <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
 
                 <p className="decisioning">Invest using Traditional Currency</p>

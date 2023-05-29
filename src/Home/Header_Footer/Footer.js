@@ -69,7 +69,7 @@ export default function Footer() {
                         <div className="cursoerNav">Approach</div>
                         <div className="mt-4"><img src={phone_ring} className="mobil-footer-img mr-2" />(+971) - 8829921232</div>
                         <div><img src={mail_icon} className="mobil-footer-img mr-2" />support@leiraholding.com</div>
-                        <div className="mt-4">
+                        <div className="mt-2">
                             © 2023 LEIRA. Design & Developed by Eterna
                         </div>
                         <div className="d-flex justify-content-between setwidthflex mt-5">

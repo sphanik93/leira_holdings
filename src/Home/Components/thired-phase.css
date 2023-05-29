@@ -79,11 +79,6 @@
     /* right: 0; */
   }
 
-  .invest-in-future-img1 {
-    /* width: 1057.78px; */
-    /* height: 595px; */
-    margin-left: 3%;
-}
 .spaceing{
   margin-left: 5% !important;
 }
@@ -97,7 +92,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 29px;
-  line-height: 101px;
+  /* line-height: 101px; */
   align-items: center;
   /* text-align: center; */
   letter-spacing: 0.08em;
@@ -119,4 +114,25 @@ color: #AB8F67;
 
 .third_banner{
   /* height: 700px; */
+}
+
+
+.invest-in-future-img1 {
+  /* width: 1057.78px; */
+  /* height: 595px; */
+  /* margin-left: 3%; */
+  width: 90%;
+}
+/* @media (min-width: 979px) {
+} */
+
+.thired-phase {
+  /* position: absolute; */
+  /* display: block; */
+  /* width: 1437px;
+  left: -5px;
+  top: 1738px; */
+  /* background: rgba(255, 255, 255, 0.87);
+  height: 850px; */
+  justify-content: center;
 }

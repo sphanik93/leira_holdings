@@ -271,25 +271,6 @@ button.close {
 
 }
 
-.modal-content {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 75%;
-    pointer-events: auto;
-    background-color: #000;
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .2);
-    border-radius: 0.3rem;
-    outline: 0;
-    height: 600px;
-}
-
 .modal-body {
     position: fixed;
     -webkit-box-flex: 1;
@@ -355,9 +336,6 @@ button.close {
     cursor: pointer;
 }
 
-.model-footer {
-    margin-top: 115% !important;
-}
 
 .btn-warning:hover {
     color: #000000;
@@ -384,21 +362,39 @@ button.close {
     overflow: overlay;
 }
 
-.business-lines-heading {
-    font-family: 'Avander';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 43px;
-    line-height: 101px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.08em;
-    color: #AA9063;
-    opacity: 1;
-    justify-content: center;
+@media (max-width: 700px) {
+    .business-lines-heading {
+        font-family: 'Avander';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 43px;
+        /* line-height: 101px; */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.08em;
+        color: #AA9063;
+        opacity: 1;
+        justify-content: center;
+    }
 }
 
+@media (min-width: 701px) {
+    .business-lines-heading {
+        font-family: 'Avander';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 43px;
+        line-height: 101px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.08em;
+        color: #AA9063;
+        opacity: 1;
+        justify-content: center;
+    }
+}
 .second-phasebg {
     background: url(../assets/second-layer.png);
     background-position: "center";
@@ -439,17 +435,6 @@ button.close {
     right: 0;
     background: url(../assets/second-layer.png) center center;
     opacity: .1;
-}
-
-.thired-phase {
-    /* position: absolute;
-    display: block;
-    width: 1437px;
-    height: 850px;
-    left: -5px;
-    top: 1738px;
-    background: rgba(255, 255, 255, 0.87); */
-    justify-content: center;
 }
 
 .invest-in-future-img {
@@ -533,7 +518,7 @@ button.close {
 }
 
 .invest-button {
-    width: 20%;
+    width: 24%;
     /* width: 178px; */
 height: 41px;
 left: 1136px;
@@ -704,17 +689,6 @@ color: #FFFFFF;
     margin-top: 5%;
 } */
 
-.modal-dialog {
-    position: fixed;
-    margin: auto;
-    width: 100%;
-    /* height: 100%; */
-    right: -7%;
-    margin-top: 9%;
-}
-.modal-content {
-    height: 100%;
-}
 
 .setwidthflex{
     width: 74%;
@@ -757,3 +731,74 @@ color: #FFFFFF;
   filter: grayscale(0);
   -webkit-filter:grayscale(0);
 } */
+
+
+@media (max-width: 450px) {
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 72%;
+        pointer-events: auto;
+        background-color: #000;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 0.3rem;
+        outline: 0;
+        height: 530px;
+        border-radius: 8px
+    }
+    
+.modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 382px;
+    /* height: 100%; */
+    right: -8%;
+    margin-top: 22%;
+}
+.model-footer {
+    margin-top: 144% !important;
+}
+
+}
+
+@media (min-width: 450px) {
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 68%;
+        pointer-events: auto;
+        background-color: #000;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 0.3rem;
+        outline: 0;
+        height: 570px;
+        border-radius: 8px
+    }
+    
+.modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 440px;
+    /* height: 100%; */
+    right: -8%;
+    margin-top: 9%;
+}
+.model-footer {
+    margin-top: 140% !important;
+}
+
+}
