@@ -13,46 +13,39 @@ import $ from 'jquery';
 
 export function About_us() {
 
-
     window.addEventListener('scroll', function () {
-        if (window.pageYOffset > 490) {
+        if (window.pageYOffset < 200) {
           console.log('insidescrolling',window.pageYOffset)
-          $(".scroll-class").css("-webkit-filter" , "grayscale(100%)");
+          $(".scroll-classtop").css("-webkit-filter" , "grayscale(0%)");
         } else{
-            console.log('inside not',window.pageYOffset)
-          $(".scroll-class").css("-webkit-filter" , "grayscale(0%)");
-        } 
-         if (window.pageYOffset > 0 && this.window.pageYOffset < 550) {
-            console.log('insidescrolling',window.pageYOffset)
+          console.log('insidenot',window.pageYOffset)
+          $(".scroll-classtop").css("-webkit-filter" , "grayscale(100%)");
+        }
+        
+        if (window.pageYOffset > 0 && this.window.pageYOffset < 550) {
+            console.log('insidescrolling1',window.pageYOffset)
           $(".scroll-class1").css("-webkit-filter" , "grayscale(100%)");
-        }  else{
-            console.log('inside not',window.pageYOffset)
-            $(".scroll-class1").css("-webkit-filter" , "grayscale(0%)");
-          }
-         if (window.pageYOffset > 1156 && this.window.pageYOffset < 1247) {
-            console.log('insidescrolling',window.pageYOffset)
+        } else if((window.pageYOffset > 988 && this.window.pageYOffset < 1247)){
           $(".scroll-class1").css("-webkit-filter" , "grayscale(100%)");
-          $(".scroll-class2").css("-webkit-filter" , "grayscale(100%)");
-        }  else{
-            console.log('inside not',window.pageYOffset)
-            $(".scroll-class1").css("-webkit-filter" , "grayscale(0%)");
-          $(".scroll-class2").css("-webkit-filter" , "grayscale(0%)");
-          }
-         if (window.pageYOffset > 1720) {
-            console.log('insidescrolling',window.pageYOffset)
-          $(".scroll-class1").css("-webkit-filter" , "grayscale(100%)");
-          $(".scroll-class2").css("-webkit-filter" , "grayscale(100%)");
-        } else{
-          console.log('inside not',window.pageYOffset)
+        }else{
+          console.log('insidenot',window.pageYOffset)
           $(".scroll-class1").css("-webkit-filter" , "grayscale(0%)");
+        }
+        
+        if (window.pageYOffset < 1120) {
+            console.log('insidescrolling12',window.pageYOffset)
+          $(".scroll-class2").css("-webkit-filter" , "grayscale(100%)");
+        } else{
+          console.log('insidenot',window.pageYOffset)
           $(".scroll-class2").css("-webkit-filter" , "grayscale(0%)");
         }
+        
       })
 
     return (
         <div className="">
             <Header path={'HOME'} page={'/ ABOUT'} />
-            <div class="scroll-class" style={{
+            <div class="scroll-classtop" style={{
                 background: `url(${leira_holding})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",

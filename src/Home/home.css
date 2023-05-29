@@ -560,7 +560,7 @@ color: #FFFFFF;
     text-align: center;
     height: 155px;
     font-size: 14px;
-    font-family: roboto;
+    font-family: 'Roboto';
     font-weight: 400;
 }
 
@@ -611,7 +611,7 @@ color: #FFFFFF;
     /* text-align: center; */
     height: 500px;
     font-size: 14px;
-    font-family: roboto;
+    font-family: 'Roboto';
     font-weight: 400;
 }
 

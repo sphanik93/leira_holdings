@@ -7,11 +7,11 @@ import smart from "../../assets/Group 625050.png"
 import financial from "../../assets/Group 625051.png"
 import industrial from "../../assets/Group 625052.png"
 import MediaQuery from "react-responsive";
-import agriculture_black from "../../assets/Group 625045.png"
-import smart_black from "../../assets/Group 625046.png"
-import financial_black from "../../assets/Group 625047.png"
-import industrial_black from "../../assets/Group 625048.png"
 import $ from 'jquery';
+import agriculture_black from "../../assets/Group 625045.png"
+import smart_black from "../../assets/Group 625064.png"
+import financial_black from "../../assets/Group 625065.png"
+import industrial_black from "../../assets/Group 625066.png"
 
 
 export default function FlowChart() {
@@ -34,61 +34,47 @@ export default function FlowChart() {
     const [setApp7, setSetApp7] = useState(false)
 
     function setNew2nd(id, img) {
-        document.getElementById(id).src = img;
+        // document.getElementById(id).src = img;
         if (id == "img") {
-            $(".grap-2nd-img").css("border" , "1px solid #AA9063");
-            $(".grap-2nd-img").css("border-radius" , "50%");
             setSetHover4(true)
             setSetHover5(true)
             setSetHover1(true)
         }
         if (id == "img1") {
-            $(".grap-3rd-img").css("border" , "1px solid #AA9063");
-            $(".grap-3rd-img").css("border-radius" , "50%");
             setSetHover6(true)
             setSetHover1(true)
         }
         if (id == "img2") {
-            $(".grap-4th-img").css("border" , "1px solid #AA9063");
-            $(".grap-4th-img").css("border-radius" , "50%");
             setSetHover1(true)
             setSetHover2(true)
             setSetHover3(true)
         }
         if (id == "img3") {
-            $(".grap-5th-img").css("border" , "1px solid #AA9063");
-            $(".grap-5th-img").css("border-radius" , "50%");
             setSetHover1(true)
             setSetHover2(true)
             setSetHover7(true)
             setSetHover8(true)
         }
     }
+
     function onmouseOut(id, img) {
-        document.getElementById(id).src = img;
+        // document.getElementById(id).src = img;
+        console.log('====',id)
         if (id == "img") {
-            $(".grap-2nd-img").css("border" , "1px solid #000");
-            $(".grap-2nd-img").css("border-radius" , "50%");
             setSetHover4(false)
             setSetHover5(false)
             setSetHover1(false)
         }
         if (id == "img1") {
-            $(".grap-3rd-img").css("border" , "1px solid #000");
-            $(".grap-3rd-img").css("border-radius" , "50%");
             setSetHover6(false)
             setSetHover1(false)
         }
         if (id == "img2") {
-            $(".grap-4th-img").css("border" , "1px solid #000");
-            $(".grap-4th-img").css("border-radius" , "50%");
             setSetHover1(false)
             setSetHover2(false)
             setSetHover3(false)
         }
         if (id == "img3") {
-            $(".grap-5th-img").css("border" , "1px solid #000");
-            $(".grap-5th-img").css("border-radius" , "50%");
             setSetHover1(false)
             setSetHover2(false)
             setSetHover7(false)
@@ -146,24 +132,26 @@ export default function FlowChart() {
             setSetApp7(false)
         }
     }
+    
+
 
     return (
         <div class="graph-top">
             <MediaQuery minWidth={544}>
                 <div id={setHover4 ? "line4hover" : "line4"}>
-                    {/* <div className="circle">AGRICULTURE</div> */}
-                    <img src={agriculture} class="grap-2nd-img" onMouseOver={() => setNew2nd("img", agriculture_black)} onMouseOut={() => onmouseOut("img", agriculture)} id="img" />
+                    <div className="circle" onmouseover={() => setNew2nd("img")}>AGRICULTURE</div>
+                    {/* <img src={agriculture} class="grap-2nd-img" onMouseOver={() => setNew2nd("img", agriculture_black)} onMouseOut={() => onmouseOut("img", agriculture)} id="img" /> */}
                 </div>
                 <div id={setHover5 ? "line5hover" : "line5"}>
 
                 </div>
                 {/* <img src={Hline1_gold} className="line-image4" id="lineimage"/> */}
-                <div id={setHover1 ? "line1hover" : "line1"}>
                     <img src={leiralogo} class="lerialogo" />
-                    <img src={smart} class="grap-3rd-img" onMouseOver={() => setNew2nd("img1", smart_black)} onMouseOut={() => onmouseOut("img1", smart)} id="img1" />
+                <div id={setHover1 ? "line1hover" : "line1"}>
+                    <div className="circle1" onmouseover={() => setNew2nd("img1")}>SMART CITIES</div>
+                    {/* <img src={smart} class="grap-3rd-img" onMouseOver={() => setNew2nd("img1", smart_black)} onMouseOut={() => onmouseOut("img1", smart)} id="img1" /> */}
 
-                    {/* <div className="circle1">SMART CITIES</div>
-                        <div className="circle3">FINANCIAL SERVICES</div>
+                        {/* <div className="circle3">FINANCIAL SERVICES</div>
                         <div className="circle4">INDUSTRIAL SECTOR</div> */}
                 </div>
                 <div id={setHover6 ? "line6hover" : "line6"}>
@@ -172,15 +160,16 @@ export default function FlowChart() {
                 <div id={setHover2 ? "line2hover" : "line2"}></div>
                 {/* <img src={lineheight} className="line-image" id="lineimage"/> */}
                 <div id={setHover3 ? "line3hover" : "line3"}>
-                    <img src={financial} class="grap-4th-img" onMouseOver={() => setNew2nd("img2", financial_black)} onMouseOut={() => onmouseOut("img2", financial)} id="img2" />
+                    {/* <img src={financial} class="grap-4th-img" onMouseOver={() => setNew2nd("img2", financial_black)} onMouseOut={() => onmouseOut("img2", financial)} id="img2" /> */}
+                    <div className="circle3" onmouseover={() => setNew2nd("img2")}>FINANCIAL SERVICES</div>
                 </div>
                 {!setHover8 ? "" : <div id={"line9hover"}>
                 </div>}
                 <div id={setHover7 ? "line7hover" : "line7"}></div>
                 {/* <img src={lineheight} className="line-image1" id="lineimage1"/> */}
                 <div id={setHover8 ? "line8hover" : "line8"}>
-                    <img src={industrial} class="grap-5th-img" onMouseOver={() => setNew2nd("img3", industrial_black)} onMouseOut={() => onmouseOut("img3", industrial)} id="img3" />
-
+                    {/* <img src={industrial} class="grap-5th-img" onMouseOver={() => setNew2nd("img3", industrial_black)} onMouseOut={() => onmouseOut("img3", industrial)} id="img3" /> */}
+                    <div className="circle4" onMouseOut={() => setNew2nd("img3")}>INDUSTRIAL SECTOR</div>
                 </div>
             </MediaQuery>
             <MediaQuery maxWidth={543}>

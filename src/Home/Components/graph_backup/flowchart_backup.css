@@ -1,0 +1,980 @@
+/* 320 768
+768 1028
+1024 */
+
+/* onhover  -------------=========== */
+
+@media screen and (min-device-width: 544px) {
+    .circle:hover > #line1hover {
+      font-size: 0;
+      width: 15%;
+      height: 2px;
+      color: #fff;
+      background-color: #AA9063;
+      margin: auto;
+      margin-left: 35%;
+      position: absolute;
+      margin-top: -0.15%;
+    }
+  
+    #line2hover {
+      font-size: 0;
+      width: 3px;
+      height: 18rem;
+      color: #fff;
+      background-color: #AA9063;
+      margin: auto;
+      margin-left: 43.9%;
+    }
+  
+    #line3hover {
+      font-size: 0;
+      width: 11%;
+      height: 2px;
+      color: #fff;
+      background-color: #AA9063;
+      margin-left: 50%;
+      margin-top: -0.1%;
+      position: absolute;
+    }
+  
+    #line3hover:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: #AA9063;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    #line9hover {
+      font-size: 0;
+      width: 5.1%;
+      height: 2px;
+      color: #fff;
+      background-color: #AA9063;
+      margin-left: 50%;
+      margin-top: -0.1%;
+      position: absolute;
+    }
+  
+    /* #line9hover::before{
+    font-size:0;
+    width:5.5%;
+    height:2px;
+    color:#fff;
+    background-color:#0000;    
+    margin-left: 50%;
+    margin-top: -0.1%;
+    position:absolute;
+    right:0; left:auto; left:0;
+   }
+   #line9hover:after{
+    content:"";
+    width:50.5%;
+    height:2px;
+    color:#fff;
+    background-color:#AA9063;    
+    margin-left: 100%;
+    margin-top: -10.2%;
+    position:absolute;
+   } */
+   .circle:hover > #line4hover {
+      font-size: 0;
+      width: 10%;
+      height: 2px;
+      color: #fff;
+      background-color: #AA9063;
+      margin-left: 50%;
+      position: absolute;
+    }
+  
+    .circle:hover > #line4hover:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: #AA9063;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    .circle:hover > #line5hover {
+      font-size: 0;
+      width: 2px;
+      height: 17rem;
+      color: #fff;
+      background-color: #AA9063;
+      margin: auto;
+    }
+  
+    #line6hover {
+      font-size: 0;
+      width: 23%;
+      height: 2px;
+      color: #fff;
+      background-color: #AA9063;
+      margin: auto;
+      margin-left: 50%;
+      margin-top: -2px;
+      position: absolute;
+    }
+  
+    #line6hover:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: #AA9063;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    #line7hover {
+      font-size: 0;
+      width: 2px;
+      height: 15rem;
+      color: #fff;
+      background-color: #AA9063;
+      margin: auto;
+      margin-left: 55%;
+      margin-top: -1px;
+    }
+  
+    #line8hover {
+      font-size: 0;
+      width: 19%;
+      height: 2px;
+      color: #fff;
+      background-color: #AA9063;
+      margin: auto;
+      margin-left: 55%;
+      margin-top: -2px;
+      position: absolute;
+    }
+  
+    #line8hover:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: #AA9063;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    /* onhover lines end===================== */
+  
+    #line1 {
+      font-size: 0;
+      width: 15%;
+      height: 2px;
+      color: #fff;
+      background-color: #000;
+      margin: auto;
+      margin-left: 35%;
+      position: absolute;
+      margin-top: -0.15%;
+    }
+  
+    #line2 {
+      font-size: 0;
+      width: 3px;
+      height: 18rem;
+      color: #fff;
+      background-color: #000;
+      margin: auto;
+      margin-left: 45.9%;
+    }
+  
+    #line3 {
+      font-size: 0;
+      width: 17%;
+      height: 2px;
+      color: #fff;
+      background-color: #000;
+      margin-left: 46%;
+      margin-top: -0.1%;
+      position: absolute;
+    }
+  
+    #line3:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: black;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    #line4 {
+      font-size: 0;
+      width: 10%;
+      height: 2px;
+      color: #fff;
+      background-color: #000;
+      margin-left: 50%;
+      position: absolute;
+    }
+  
+    #line4:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: #000;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    #line5 {
+      font-size: 0;
+      width: 2px;
+      height: 17rem;
+      color: #fff;
+      background-color: #000;
+      margin: auto;
+    }
+  
+    #line6 {
+      font-size: 0;
+      width: 23%;
+      height: 2px;
+      color: #fff;
+      background-color: #000;
+      margin: auto;
+      margin-left: 50%;
+      margin-top: -2px;
+      position: absolute;
+    }
+  
+    #line6:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: black;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    #line7 {
+      font-size: 0;
+      width: 2px;
+      height: 15rem;
+      color: #fff;
+      background-color: #000;
+      margin: auto;
+      margin-left: 55%;
+      margin-top: -1px;
+    }
+  
+    #line8 {
+      font-size: 0;
+      width: 19%;
+      height: 2px;
+      color: #fff;
+      background-color: #000;
+      margin: auto;
+      margin-left: 55%;
+      margin-top: -2px;
+      position: absolute;
+    }
+  
+    #line8:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: black;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+  
+    .lerialogo {
+      margin-left: 19%;
+      margin-top: -7%;
+      width: 15%;
+      position: absolute;
+    }
+  
+    .graph-top {
+      margin-top: 8% !important;
+    }
+  
+    .grap-2nd-img {
+      margin-top: -68% !important;
+      margin-left: 113% !important;
+      width: 135%;
+    }
+  
+    .grap-3rd-img {
+      margin-top: -44% !important;
+      margin-left: 251% !important;
+      width: 88%;
+    }
+  
+    .grap-4th-img {
+      margin-top: -66% !important;
+      margin-left: 110% !important;
+      width: 123%;
+    }
+  
+    .grap-5th-img {
+      margin-top: -43% !important;
+      margin-left: 118% !important;
+      width: 85%;
+    }
+  
+    .line-image {
+      margin-left: 47%;
+      width: 6%;
+      margin-top: -2px;
+    }
+  
+    #lineimage {
+      height: 90%;
+    }
+  
+    .line-image1 {
+      margin-left: 52%;
+      width: 6%;
+      margin-top: -2px;
+    }
+  
+    .line-image4 {
+      margin-left: 49.9%;
+    }
+  }
+  
+  @media screen and (max-length-width: 767px) {
+    .line-image {
+      /* margin-left: 47%; */
+      /* width: 6%; */
+      height: 0;
+    }
+  
+    .line-image1 {
+      /* margin-left: 47%; */
+      /* width: 6%; */
+      height: 0;
+    }
+  
+    .graph-top {
+      margin-top: 8% !important;
+      transform: rotate(90deg);
+    }
+  }
+  
+  @media screen and (max-width: 543px) {
+  
+    #line-1 {
+      font-size: 0;
+      width: 2px;
+      height: 10rem;
+      color: #fff;
+      background-color: #000;
+      margin-left: 20%;
+      margin-top: -3%;
+      /* margin:auto; */
+    }
+  
+    #line-2 {
+      font-size: 0;
+      width: 60px;
+      height: 2px;
+      color: #fff;
+      background-color: #000;
+      margin-left: 20%;
+      position: absolute;
+      /* margin-top: -3%;  */
+      /* margin:auto; */
+    }
+  
+    #line-3 {
+      font-size: 0;
+      width: 2px;
+      height: 14rem;
+      color: #fff;
+      background-color: #000;
+      margin-left: 20%;
+      margin-top: -11%;
+      /* margin:auto; */
+    }
+  
+    #line-4 {
+      font-size: 0;
+      width: 132px;
+      height: 2px;
+      color: #fff;
+      background-color: #000;
+      margin-left: 20%;
+      position: absolute;
+      /* margin-top: -10%;  */
+      /* margin:auto; */
+    }
+  
+    #line-5 {
+      font-size: 0;
+      width: 2px;
+      height: 14rem;
+      color: #fff;
+      background-color: #000;
+      margin-left: 20%;
+      margin-top: -13%;
+      /* margin:auto; */
+    }
+  
+    #line-6 {
+      font-size: 0;
+      width: 60px;
+      height: 2px;
+      color: #fff;
+      background-color: #000;
+      margin-left: 20%;
+      position: absolute;
+      /* margin-top: -3%;  */
+      /* margin:auto; */
+    }
+  
+    #line-7 {
+      font-size: 0;
+      width: 2px;
+      height: 14rem;
+      color: #fff;
+      background-color: #000;
+      margin-left: 20%;
+      margin-top: -11%;
+      /* margin:auto; */
+    }
+  
+    #line-8 {
+      font-size: 0;
+      width: 132px;
+      height: 2px;
+      color: #fff;
+      background-color: #000;
+      margin-left: 20%;
+      position: absolute;
+      /* margin-top: -3%;  */
+      /* margin:auto; */
+    }
+  
+    #line-2:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: black;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    #line-4:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: black;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    #line-6:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: black;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    #line-8:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: black;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    /* onhover started================ */
+    #line-1-hover {
+      font-size: 0;
+      width: 2px;
+      height: 10rem;
+      color: #fff;
+      background-color: #AA9063;
+      margin-left: 20%;
+      margin-top: -3%;
+      /* margin:auto; */
+    }
+  
+    #line-2-hover {
+      font-size: 0;
+      width: 60px;
+      height: 2px;
+      color: #fff;
+      background-color: #AA9063;
+      margin-left: 20%;
+      position: absolute;
+      /* margin-top: -3%;  */
+      /* margin:auto; */
+    }
+  
+    #line-3-hover {
+      font-size: 0;
+      width: 2px;
+      height: 14rem;
+      color: #fff;
+      background-color: #AA9063;
+      margin-left: 20%;
+      margin-top: -11%;
+      /* margin:auto; */
+    }
+  
+    #line-4-hover {
+      font-size: 0;
+      width: 132px;
+      height: 2px;
+      color: #fff;
+      background-color: #AA9063;
+      margin-left: 20%;
+      position: absolute;
+      /* margin-top: -10%;  */
+      /* margin:auto; */
+    }
+  
+    #line-5-hover {
+      font-size: 0;
+      width: 2px;
+      height: 14rem;
+      color: #fff;
+      background-color: #AA9063;
+      margin-left: 20%;
+      margin-top: -13%;
+      /* margin:auto; */
+    }
+  
+    #line-6-hover {
+      font-size: 0;
+      width: 60px;
+      height: 2px;
+      color: #fff;
+      background-color: #AA9063;
+      margin-left: 20%;
+      position: absolute;
+      /* margin-top: -3%;  */
+      /* margin:auto; */
+    }
+  
+    #line-7-hover {
+      font-size: 0;
+      width: 2px;
+      height: 14rem;
+      color: #fff;
+      background-color: #AA9063;
+      margin-left: 20%;
+      margin-top: -11%;
+      /* margin:auto; */
+    }
+  
+    #line-8-hover {
+      font-size: 0;
+      width: 132px;
+      height: 2px;
+      color: #fff;
+      background-color: #AA9063;
+      margin-left: 20%;
+      position: absolute;
+      /* margin-top: -3%;  */
+      /* margin:auto; */
+    }
+  
+    #line-2-hover:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: #AA9063;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    #line-4-hover:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: #AA9063;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    #line-6-hover:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: #AA9063;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    #line-8-hover:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 10px;
+      width: 10px;
+      background: #AA9063;
+      content: "";
+      border-radius: 5px;
+      right: 0;
+      left: auto;
+    }
+  
+    /* onhoverended=============== */
+    .line-image {
+      /* margin-left: 47%; */
+      /* width: 6%; */
+      height: 0;
+    }
+  
+    .line-image1 {
+      /* margin-left: 47%; */
+      /* width: 6%; */
+      height: 0;
+    }
+  
+    .lerialogo {
+      margin-left: 4%;
+      /* margin-top: -23px; */
+      width: 30%;
+    }
+  
+    .grap-2nd-img {
+      margin-top: -14%;
+      margin-left: 40% !important;
+      width: 25%;
+    }
+  
+    .grap-3rd-img {
+      margin-top: -14%;
+      margin-left: 59% !important;
+      width: 25%;
+    }
+  
+    .grap-4th-img {
+      margin-top: -14%;
+      margin-left: 40% !important;
+      width: 25%;
+    }
+  
+    .grap-5th-img {
+      margin-top: -14%;
+      margin-left: 59% !important;
+      width: 25%;
+    }
+  }
+  
+  /* For Desktop View */
+  @media screen and (min-device-width: 544px) {
+  
+    /* and (min-device-width: 678px) { */
+    .circle1 {
+      width: 86%;
+      /* height: 199px; */
+      background-color: #fff;
+      border: 5px solid black;
+      border-radius: 50%;
+      z-index: 9;
+      position: relative;
+      margin-top: -44% !important;
+      margin-left: 258% !important;
+      /* line-height: 11; */
+      font-size: 18px;
+      color: black;
+      text-align: center;
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      opacity: 0.5;
+      font-weight: 900;
+    }
+  
+    .circle {
+      width: 130%;
+      /* height: 199px; */
+      background-color: #fff;
+      border: 5px solid black;
+      border-radius: 50%;
+      /* z-index: 9; */
+      position: relative;
+      margin-top: -68%;
+      margin-left: 104%;
+      /* line-height: 11; */
+      font-size: 18px;
+      color: black;
+      text-align: center;
+      height: 200px;
+      opacity: 0.5;
+      font-weight: 900;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  
+    .circle3 {
+      width: 76%;
+      /* height: 199px; */
+      background-color: #fff;
+      border: 5px solid black;
+      border-radius: 50%;
+      z-index: 9;
+      position: relative;
+      margin-top: -42%;
+      margin-left: 103%;
+      /* line-height: 11; */
+      font-size: 18px;
+      color: black;
+      text-align: center;
+      height: 200px;
+      
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      opacity: 0.5;
+      font-weight: 900;
+    }
+  
+    .circle4 {
+      width: 67%;
+      /* height: 199px; */
+      background-color: #fff;
+      border: 5px solid black;
+      border-radius: 50%;
+      z-index: 9;
+      position: relative;
+      margin-top: -37%;
+      margin-left: 107%;
+      /* line-height: 11; */
+      font-size: 18px;
+      color: black;
+      text-align: center;
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      opacity: 0.5;
+      font-weight: 900;
+    }
+  
+  
+  
+    .circle:hover {
+      width: 130%;
+      /* height: 199px; */
+      background-color: #000;
+      border: 5px solid #AA9063;
+      border-radius: 50%;
+      /* z-index: 9; */
+      position: relative;
+      margin-top: -68%;
+      margin-left: 104%;
+      /* line-height: 11; */
+      font-size: 18px;
+      color: #ffffff;
+      text-align: center;
+      height: 200px;
+      opacity: 1;
+      font-weight: 900;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  
+    .circle1:hover {
+      width: 86%;
+      /* height: 199px; */
+      background-color: #000;
+      border: 5px solid #AA9063;
+      border-radius: 50%;
+      z-index: 9;
+      position: relative;
+      margin-top: -44% !important;
+      margin-left: 258% !important;
+      /* line-height: 11; */
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      opacity: 1;
+      font-weight: 900;
+    }
+  
+    .circle3:hover {
+      width: 76%;
+      /* height: 199px; */
+      background-color: #000;
+      border: 5px solid #AA9063;
+      border-radius: 50%;
+      z-index: 9;
+      position: relative;
+      margin-top: -42%;
+      margin-left: 103%;
+      /* line-height: 11; */
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      height: 200px;
+      
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      opacity: 1;
+      font-weight: 900;
+    }
+  
+    .circle4:hover {
+      width: 67%;
+      /* height: 199px; */
+      background-color: #000;
+      border: 5px solid #AA9063;
+      border-radius: 50%;
+      z-index: 9;
+      position: relative;
+      margin-top: -37%;
+      margin-left: 107%;
+      /* line-height: 11; */
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      opacity: 1;
+      font-weight: 900;
+    }
+  }
+  
+  @media screen and (max-width: 543px) {
+    .circle1 {
+      width: 138%;
+      /* height: 199px; */
+      background-color: #000;
+      border: 5px solid #AA9063;
+      border-radius: 50%;
+      z-index: 9;
+      position: relative;
+      margin-top: -115%;
+      margin-left: 251%;
+      line-height: 6;
+      font-size: 12px;
+      color: black;
+      text-align: center;
+    }
+  
+    .circle {
+      width: 209%;
+      /* height: 199px; */
+      background-color: #fff;
+      border: 2px solid black;
+      border-radius: 50%;
+      z-index: 9;
+      position: relative;
+      margin-top: -89%;
+      margin-left: 100%;
+      line-height: 6;
+      font-size: 18px;
+      color: black;
+      text-align: center;
+    }
+  
+    .circle3 {
+      width: 145%;
+      /* height: 199px; */
+      background-color: #fff;
+      border: 2px solid black;
+      border-radius: 50%;
+      z-index: 9;
+      position: relative;
+      margin-top: 246%;
+      margin-left: 193%;
+      line-height: 3;
+      font-size: 12px;
+      color: black;
+      text-align: center;
+    }
+  
+    .circle4 {
+      width: 140%;
+      /* height: 199px; */
+      background-color: #fff;
+      border: 2px solid black;
+      border-radius: 50%;
+      z-index: 9;
+      position: relative;
+      margin-top: 142%;
+      margin-left: 283%;
+      line-height: 3;
+      font-size: 12px;
+      color: black;
+      text-align: center;
+    }
+  }
