@@ -52,7 +52,7 @@ export default function OurApproach() {
 
     console.log('tablist', tabList)
     return (
-        <div>
+        <div dir="rtl">
             <MediaQuery minWidth={770}>
                 <div className="mb-5">
                     <div className="d-flex">

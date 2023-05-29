@@ -17,7 +17,7 @@ export function BankPage() {
 
 
     return (
-        <div className="">
+        <div className="" dir="rtl">
             <Header path={'HOME'} page={'/ LEIRA BANK'} />
             <div class="" style={{
                 background: `url(${leira_holding})`,

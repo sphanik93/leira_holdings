@@ -15,7 +15,7 @@ export function Contact_Us(props) {
     const [buttonSelect, setButtonSelect] = useState([true, false, false])
 
     return (
-        <div>
+        <div dir="rtl">
             <Header path={'HOME'} page={'/ CONTACT US'} />
             <div class="" style={{
                 background: `url(${contact_us})`,
@@ -27,7 +27,7 @@ export function Contact_Us(props) {
                 // marginTop: '87px'
             }}>
                  <Zoom left cascade>
-                <div className="text-onBG_contact mr-5">
+                <div className="text-onBG_contact topset">
                     <p className="contact_text">Contact Us</p>
                     <p className="what_help">What can we help you with today?</p>
                 </div>

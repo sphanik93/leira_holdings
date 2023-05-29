@@ -1,10 +1,13 @@
 .text-onBG_contact {
     /* bottom: 0; */
     position: absolute;
-    margin-left: 5% !important;
+    /* margin-left: 5% !important; */
+    
+    margin: 4%;
+}
+.topset{
     margin-top: 24%;
 }
-
 .contact_text {
     width: 269px;
     height: 102px;
@@ -14,6 +17,7 @@
     font-size: 52px;
     line-height: 101px;
     color: #FFFFFF;
+    display: flex;
 }
 
 .what_help {
@@ -65,12 +69,6 @@
     font-size: 18.4011px;
 }
 
-.contact_input_box {
-    width: 288px;
-    height: 55px;
-    background: #FFFFFF;
-    border: 0.681522px solid #828282;
-}
 
 .contact_input_box2 {
     width: 30%;
@@ -157,10 +155,22 @@
 .flexing{
     display: flex;
 }
+.contact_input_box {
+    width: 288px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 0.681522px solid #828282;
+}
 }
 @media screen and (max-width: 767px) {
     .flexing{
         /* display: flex; */
+    }
+    .contact_input_box {
+        width: 168px;
+        height: 55px;
+        background: #FFFFFF;
+        border: 0.681522px solid #828282;
     }
 }
 

@@ -1,8 +1,9 @@
 .text-on_contact {
     /* bottom: 0; */
     position: absolute;
-    margin-left: 5% !important;
-    margin-top: 15%;
+    /* margin-left: 5% !important; */
+    margin-top: 15% !important;
+    margin: 5% !important
 }
 
 .about_text {
@@ -14,6 +15,7 @@
     font-size: 52px;
     line-height: 101px;
     color: #FFFFFF;
+    display: flex;
 }
 
 .text-on_contact1 {
@@ -21,6 +23,7 @@
     position: absolute;
     margin-left: 5% !important;
     margin-top: 28%;
+    margin: 5% !important
 }
 
 .scroll-class {
@@ -28,6 +31,12 @@
 
 }
 
+.toping{
+    margin-top: 15% !important;
+}
+.toping1{
+    margin-top: 20% !important;
+}
 @media screen and (max-width: 540px) {
 .about_welcome {
     font-family: 'Roboto';
@@ -62,6 +71,9 @@
         align-items: center;
         letter-spacing: 0.06em;
         color: #FFFFFF;
+        /* position: absolute; */
+        display: flex;
+
     }
     .labout_longdesc {
         position: relative;

@@ -24,20 +24,10 @@
 
 .text-onBG {
     margin-top: 8%;
-    margin-left: 8%;
+    /* margin-left: 8%; */
     position: absolute;
-}
-
-.leira_bank_longdesc {
-    position: absolute;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 23px;
-    align-items: center;
-    letter-spacing: 0.08em;
-    color: #FFFFFF;
+    margin: 4%;
+    margin-top: 7%;
 }
 
 .bank_img {
@@ -80,11 +70,13 @@
     align-items: center;
     letter-spacing: 1px;
     color: #000000;
+    display: flex;
 }
 
 .container_box {
     margin-top: 4%;
-    margin-left: 5%
+    /* margin-left: 5% */
+    margin: 6% !important
 }
 
 #leirabankline {
@@ -134,3 +126,52 @@
 .bank_img_mobile {
     width: 94%;
 }
+
+@media screen and (min-device-width: 768px) {
+    .leira_bank_des {
+        /* position: absolute; */
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 43px;
+        align-items: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+    }
+    .leira_bank_longdesc {
+        position: absolute;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 23px;
+        align-items: center;
+        letter-spacing: 0.08em;
+        color: #FFFFFF;
+    }
+    }
+    @media screen and (max-width: 767px) {
+        .leira_bank_des {
+            /* position: absolute; */
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            /* line-height: 43px; */
+            align-items: center;
+            letter-spacing: 0.06em;
+            color: #FFFFFF;
+        }
+        .leira_bank_longdesc {
+            position: absolute;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            /* line-height: 23px; */
+            align-items: center;
+            letter-spacing: 0.08em;
+            color: #FFFFFF;
+        }
+    }
