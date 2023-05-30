@@ -86,7 +86,7 @@ export default function Thired_phase() {
         <span class="count_div ml-3 mr-3">{current} / {totalItems}</span>
         <a href="#carousel2ExampleIndicators" role="button" data-slide="next"><img src={arrowright} class="arrow-right" title="" onClick={()=>nextIndicater('next')}/></a>
       </div>
-      <button type="button" class="btn read_more mt-5">Read More</button>
+      <button type="button" class={lang == "ltr"?"btn read_more mt-5":"btn read_more_ar mt-5"}>Read More</button>
     </div>
               </div>
             </div>

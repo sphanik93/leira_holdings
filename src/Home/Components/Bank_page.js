@@ -14,11 +14,20 @@ import MediaQuery from "react-responsive";
 import LightSpeed from 'react-reveal/LightSpeed';
 
 export function BankPage() {
+    const [langChange, setLangChange] = useState('ltr')
 
+    function changelanguage(lan){
+        setLangChange(lan)
+      }
+
+      useEffect(() => {
+        let language = JSON.parse(localStorage.getItem('language'));
+        setLangChange(language)
+      }, [])
 
     return (
-        <div className="" dir="rtl">
-            <Header path={'HOME'} page={'/ LEIRA BANK'} />
+        <div className="" dir={langChange}>
+            <Header path={'HOME'} page={'/ LEIRA BANK'} langset={changelanguage}/>
             <div class="" style={{
                 background: `url(${leira_holding})`,
                 backgroundPosition: "center",

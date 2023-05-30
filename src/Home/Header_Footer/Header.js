@@ -8,6 +8,7 @@ import logo from '../../assets/leira_logo.png.png'
 import logowhite from '../../assets/Png 1.png'
 import $ from 'jquery';
 import Hamburger_ar from "../Components/arabic/hamBurger_ar.js";
+import MediaQuery from "react-responsive";
 
 
 export default function Header(props) {
@@ -46,6 +47,7 @@ export default function Header(props) {
     } else{
       dir = "rtl"
     }
+    console.log('lang==',lang,dir)
     props.langset(dir)
     localStorage.setItem('language', JSON.stringify(dir));
   }
@@ -70,8 +72,10 @@ export default function Header(props) {
           <span className="mr-1">{props.path}</span> <label className="ml-1">{props.page}</label></div>
           </div>
       <div className={!blackMenu ? " m-4" : "Gold m-4"}>
+      <MediaQuery minWidth={770}>
         <button type="button" class={langChange == "eng" ? "btn-sm border border-warning langEng" : "btn-sm border border-warning langArab"} onClick={() => languageChange('eng')} >ENGLISH</button>
         <button type="button" class={langChange == "arab" ? "btn-sm border border-warning langEngArab" : "btn-sm border border-warning langArabEng"} onClick={() => languageChange('arab')}>ٱلشَّارقَة</button>
+      </MediaQuery>
         {!blackMenu ? 
         isblack?
         <img src={menu_white} class="hamberIcon ml-4  m-3" data-toggle="modal" data-target="#exampleModal" onClick={() => settingMenu(true)}/>:
@@ -82,9 +86,9 @@ export default function Header(props) {
       </div>
     </div>
     {langChange == "eng"?
-        <Hamburger opened={isblackMenu} />
+        <Hamburger opened={isblackMenu} langset={languageChange}/>
         :<>
-        {blackMenu?<Hamburger_ar opened={isblackMenu}/>:null}</>
+        {blackMenu?<Hamburger_ar opened={isblackMenu} langset={languageChange}/>:null}</>
       }
     </div>
   )

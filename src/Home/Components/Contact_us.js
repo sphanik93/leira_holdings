@@ -13,10 +13,19 @@ import MediaQuery from "react-responsive";
 
 export function Contact_Us(props) {
     const [buttonSelect, setButtonSelect] = useState([true, false, false])
+    const [langChange, setLangChange] = useState('ltr')
 
+    function changelanguage(lan){
+        setLangChange(lan)
+      }
+
+      useEffect(() => {
+        let language = JSON.parse(localStorage.getItem('language'));
+        setLangChange(language)
+      }, [])
     return (
-        <div dir="rtl">
-            <Header path={'HOME'} page={'/ CONTACT US'} />
+        <div  dir={langChange}>
+            <Header path={'HOME'} page={'/ CONTACT US'} langset={changelanguage}/>
             <div class="" style={{
                 background: `url(${contact_us})`,
                 backgroundPosition: "center",

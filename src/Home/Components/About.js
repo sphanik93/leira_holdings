@@ -11,7 +11,8 @@ import {Bounce} from 'react-reveal/';
 import $ from 'jquery';
 
 
-export function About_us() {
+export function About_us(props) {
+  const [langChange, setLangChange] = useState('ltr')
 
     window.addEventListener('scroll', function () {
         if (window.pageYOffset < 200) {
@@ -42,9 +43,19 @@ export function About_us() {
         
       })
 
+      function changelanguage(lan){
+        console.log('langu',lan)
+        setLangChange(lan)
+      }
+
+      useEffect(() => {
+        let language = JSON.parse(localStorage.getItem('language'));
+        setLangChange(language)
+      }, [])
+console.log(']]]]]]]',langChange)
     return (
-        <div className="" dir="rtl">
-            <Header path={'HOME'} page={'/ ABOUT'} />
+        <div className="" dir={langChange}>
+            <Header path={'HOME'} page={'/ ABOUT'} langset={changelanguage}/>
             <div class="scroll-classtop" style={{
                 background: `url(${leira_holding})`,
                 backgroundPosition: "center",

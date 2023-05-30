@@ -17,7 +17,7 @@ export default function Footer() {
     let navigate = useNavigate();
 
     let lang = JSON.parse(localStorage.getItem('language'))
-
+    console.log('ltr---',lang)
     return (
         <div>
             <MediaQuery minWidth={770}>
@@ -60,7 +60,7 @@ export default function Footer() {
             </MediaQuery>
             <MediaQuery maxWidth={770}>
                 <div className="footer-layout-mobile">
-                    <div className={lang == "ltr" ? "d-flex flex-column mobile-footer":"d-flex flex-column mobile-footer m-5"} dir="rtl">
+                    <div className={lang == "ltr" ? "d-flex flex-column mobile-footer":"d-flex flex-column mobile-footer m-5"} dir={lang}>
                         <img src={logo} className="footerlogo_mobile" />
 
                         <div onClick={() => navigate('/')} className="cursoerNav">Home</div>

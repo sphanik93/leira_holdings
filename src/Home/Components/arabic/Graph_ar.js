@@ -169,7 +169,7 @@ export default function FlowChart() {
                 <div id={setHover6 ? "line6hover_ar" : "line6_ar"}>
 
                 </div>
-                <div id={setHover2 ? "line2hove_ar" : "line2_ar"}></div>
+                <div id={setHover2 ? "line2hover_ar" : "line2_ar"}></div>
                 {/* <img src={lineheight} className="line-image" id="lineimage"/> */}
                 <div id={setHover3 ? "line3hover_ar" : "line3_ar"}>
                     <img src={financial} class="grap-4th-img_ar" onMouseOver={() => setNew2nd("img2", financial_black)} onMouseOut={() => onmouseOut("img2", financial)} id="img2" />
