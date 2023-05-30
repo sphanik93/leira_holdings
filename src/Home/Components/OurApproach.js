@@ -12,6 +12,14 @@ export default function OurApproach() {
     const [listSelected, setListedSelected] = useState('values that matter')
     const forceUpdate = React.useReducer(bool => !bool)[1];
 
+    let lang = JSON.parse(localStorage.getItem('language'))
+  let our_approach
+  if(lang == "ltr"){
+    our_approach = "Our Approach"
+  } else{
+    our_approach = "نهجنا"
+  }
+
     useEffect(() => {
         let data = [{
             name: "More Human Like", image: NOSECTION, text: "We recognize the importance of managing our resources responsibly and minimizing our impact on the environment. We are committed to promoting sustainability both within our organization and in the solutions, we provide to our clients. These values reflect our commitment to providing exceptional service, operating with integrity and transparency, working collaboratively, embracing innovation, and promoting sustainability.", heading: "MORE HUMAN LIKE",
@@ -52,33 +60,33 @@ export default function OurApproach() {
 
     console.log('tablist', tabList)
     return (
-        <div dir="rtl">
+        <div >
             <MediaQuery minWidth={770}>
                 <div className="mb-5">
                     <div className="d-flex">
-                        <img className="ourapproach_img" src={sideview} />
+                        <img className={lang=="ltr"?"ourapproach_img":"ourapproach_img_ar"} src={sideview} />
                         <Zoom right cascade>
-                        <p className="ourapproach ">Our Approach</p>
+                        <p className="ourapproach ">{our_approach}</p>
                         </Zoom>
                     </div>
                     <div className="mt-5 ml-5 d-flex justify-content-between">
-                        <div className="mt-5">
+                        <div className="mt-5 m-5">
                             <p className={listSelected == "objective"?"ourapproach_matter mt-5":"objective mt-5"} onClick={()=>changeType('objective')}>Objective</p>
                             <p className={listSelected == 'values that matters' ? "ourapproach_matter mt-4": "objective mt-4"} onClick={()=>changeType('values that matters')}>Values that matter</p>
                             <div className="d-flex">
                                 <div id={listSelected == "objective"? "hline-2" :"hline-1"}></div>
-                                <div className="square">
+                                <div className={lang == "ltr"?"square":"square_ar"}>
                                 <Flip right cascade>
                                     {listSelected == "values that matters"?
                                     <div className="m-3">
-                                        <p className="square_font-size">We recognize the importance of managing our resources responsibly and minimizing our impact on the environment. We are committed to promoting sustainability both within our organization and in the solutions, we provide to our clients.</p>
+                                        <p className={lang == "ltr" ?"square_font-size":"square_font-size_ar"}>We recognize the importance of managing our resources responsibly and minimizing our impact on the environment. We are committed to promoting sustainability both within our organization and in the solutions, we provide to our clients.</p>
 
-                                        <p className="square_font-size">These values reflect our commitment to providing exceptional service, operating with integrity and transparency, working collaboratively, embracing innovation, and promoting sustainability.</p>
+                                        <p className={lang == "ltr" ?"square_font-size":"square_font-size_ar"}>These values reflect our commitment to providing exceptional service, operating with integrity and transparency, working collaboratively, embracing innovation, and promoting sustainability.</p>
                                     </div>:
                                     <div className="m-3">
-                                    <p className="square_font-size">Objective description will come here</p>
+                                    <p className={lang == "ltr" ?"square_font-size":"square_font-size_ar"}>Objective description will come here</p>
 
-                                    <p className="square_font-size">These values reflect our commitment to providing exceptional service, operating with integrity and transparency, working collaboratively, embracing innovation, and promoting sustainability.</p>
+                                    <p className={lang == "ltr" ?"square_font-size":"square_font-size_ar"}>These values reflect our commitment to providing exceptional service, operating with integrity and transparency, working collaboratively, embracing innovation, and promoting sustainability.</p>
                                 </div>}
                                 </Flip>
                                 </div>
@@ -108,7 +116,7 @@ export default function OurApproach() {
                                 width: "100%",
                                 height: "200px",
                             }}>
-                                <div className="square_mobile">
+                                <div className={lang=="ltr"?"square_mobile":"square_mobile_ar"}>
                                     <p className="ourapproach_matter_mobile m-2">{list.name}</p>
                                     <p className="m-2">{list.text}</p>
 

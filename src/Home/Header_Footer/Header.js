@@ -7,6 +7,8 @@ import menu_white from '../../assets/menu_white.png'
 import logo from '../../assets/leira_logo.png.png'
 import logowhite from '../../assets/Png 1.png'
 import $ from 'jquery';
+import Hamburger_ar from "../Components/arabic/hamBurger_ar.js";
+
 
 export default function Header(props) {
   const [blackMenu, setGoldmenu] = useState(false)
@@ -16,6 +18,7 @@ export default function Header(props) {
   function isblackMenu(mes) {
     console.log(mes,'.es==')
     setGoldmenu(mes)
+
   }
 
   window.addEventListener('scroll', function () {
@@ -35,7 +38,30 @@ export default function Header(props) {
   function settingMenu(what){
     setGoldmenu(what)
   }
-  console.log('goldmenu',blackMenu)
+  function languageChange(lang){
+    setLangChange(lang)
+    let dir
+    if(lang == "eng"){
+      dir = "ltr"
+    } else{
+      dir = "rtl"
+    }
+    props.langset(dir)
+    localStorage.setItem('language', JSON.stringify(dir));
+  }
+
+  useEffect(()=>{
+    let language = JSON.parse(localStorage.getItem('language'));
+    let dir
+    if(language == "ltr"){
+      dir = "eng"
+    } else{
+      dir = "arab"
+    }
+    setLangChange(dir)
+    languageChange(dir)
+  },[])
+  
   return (<div>
       <div className={isblack? "navclass mt-5":"navclass"}>
         <div className="d-flex">
@@ -44,12 +70,8 @@ export default function Header(props) {
           <span className="mr-1">{props.path}</span> <label className="ml-1">{props.page}</label></div>
           </div>
       <div className={!blackMenu ? " m-4" : "Gold m-4"}>
-        <button type="button" class={langChange == "eng" ? "btn-sm border border-warning langEng" : "btn-sm border border-warning langArab"} onClick={() => setLangChange('eng')} >ENGLISH</button>
-        <button type="button" class={langChange == "arab" ? "btn-sm border border-warning langEngArab" : "btn-sm border border-warning langArabEng"} onClick={() => setLangChange('arab')}>ٱلشَّارقَة</button>
-        {/* {isblack?
-        <img src={menu_white} class="hamberIcon ml-4  m-3" data-toggle="modal" data-target="#exampleModal" onClick={() => setGoldmenu(true)}/>:
-        blackMenu ?<img src={gold_menu} style={{ marginRight: "-2% im" }} class="hamberIcon ml-4  m-3" data-toggle="modal" data-target="#exampleModal" onClick={() => setGoldmenu(false)} />:null
-      } */}
+        <button type="button" class={langChange == "eng" ? "btn-sm border border-warning langEng" : "btn-sm border border-warning langArab"} onClick={() => languageChange('eng')} >ENGLISH</button>
+        <button type="button" class={langChange == "arab" ? "btn-sm border border-warning langEngArab" : "btn-sm border border-warning langArabEng"} onClick={() => languageChange('arab')}>ٱلشَّارقَة</button>
         {!blackMenu ? 
         isblack?
         <img src={menu_white} class="hamberIcon ml-4  m-3" data-toggle="modal" data-target="#exampleModal" onClick={() => settingMenu(true)}/>:
@@ -59,7 +81,11 @@ export default function Header(props) {
 
       </div>
     </div>
+    {langChange == "eng"?
         <Hamburger opened={isblackMenu} />
+        :<>
+        {blackMenu?<Hamburger_ar opened={isblackMenu}/>:null}</>
+      }
     </div>
   )
 }

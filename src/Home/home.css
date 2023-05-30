@@ -21,7 +21,19 @@
     text-indent: -1015px;
     background-color: #FFFFFF;
 }
-
+.carousel-indicators_ar li {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px !important;
+    height: 10px !important;
+    margin-right: 7px;
+    margin-left: 3px;
+    border-radius: 50% !important;
+    text-indent: -1015px;
+    background-color: #FFFFFF;
+}
 .carousel-indicators {
     position: absolute;
     right: 0;
@@ -40,6 +52,23 @@
     list-style: none;
 }
 
+.carousel-indicators_ar {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 5%;
+    z-index: 15;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 2.6%;
+    /* margin-left: 15%; */
+    list-style: none;
+}
 .carousel-indicators .active {
     position: relative;
     -webkit-box-flex: 0;
@@ -55,6 +84,20 @@
     margin-top: 1px;
 }
 
+.carousel-indicators_ar .active {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px !important;
+    height: 10px !important;
+    margin-right: 7px;
+    margin-left: 3px;
+    border-radius: 50% !important;
+    text-indent: -1015px;
+    background-color: #AA9063 !important;
+    margin-top: 1px;
+}
 .carousel-next-icon,
 .carousel-prev-icon {
     display: inline-block;
@@ -177,19 +220,43 @@
     margin-right: -5px !important;
     z-index: 0 !important;
     position: relative;
+    cursor: pointer;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
 }
 
 .langArab {
     background-color: #FFFFFF !important;
-    margin-right: -5px !important
+    /* margin-right: -5px !important; */
+    
+    cursor: pointer;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
 }
 
 .langEngArab {
     background-color: #f0bb7c;
+    cursor: pointer;
+    margin-right: -5px !important;
+    z-index: 0 !important;
+    position: relative;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
 }
 
 .langArabEng {
     background-color: #FFFFFF !important;
+    cursor: pointer;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
 }
 
 .rightCorner {
@@ -589,8 +656,13 @@ color: #FFFFFF;
 .newsletter {
     float: left;
     font-size: 16px;
+    display: flex;
 }
-
+.newsletter_ar {
+    float: right;
+    font-size: 16px;
+    display: flex;
+}
 .newsletter_input {
     border-radius: 33px;
 }
@@ -662,12 +734,15 @@ color: #FFFFFF;
 
 .cursoerNav{
     cursor: pointer;
+    display: flex;
 }
 
 .home_logo{
     width: 170px;
 }
-
+.phonemail_ar{
+    display: flex;
+}
 .navclass{
     position: fixed;
     top: 0;

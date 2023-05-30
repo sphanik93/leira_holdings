@@ -164,6 +164,12 @@ width: 100%; */
         display: flex;
         justify-content: center;
     }
+    .move_buttons_ar{
+        margin-left: 55%;
+        margin-top: 15%;
+        display: flex;
+        justify-content: center;
+    }
     .heading_tag{
         font-family: 'Roboto';
         font-style: normal;
@@ -174,6 +180,7 @@ width: 100%; */
         letter-spacing: 0.08em;
         color: #AA9063;
         margin-top: 20%;
+        display: flex;
         }
         .description{
             font-family: 'Roboto';
@@ -199,6 +206,19 @@ width: 100%; */
     letter-spacing: 0.08em;
     color: #6C6C6C;
             }
+            .buttons_count_ar {
+                margin-left: -21%;
+                display: flex;
+                /* justify-content: center; */
+                font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    align-items: center;
+    letter-spacing: 0.08em;
+    color: #6C6C6C;
+            }
   }
 
   @media (min-width: 402px) and (max-width: 765px) {
@@ -208,6 +228,12 @@ width: 100%; */
         display: flex;
         justify-content: space-around;
         position: relative;
+    }
+    .move_buttons_ar{
+        /* margin-left: 33%; */
+        margin-top: 18%;
+        display: flex;
+        justify-content: center;
     }
     .heading_tag{
         font-family: 'Roboto';
@@ -220,6 +246,7 @@ width: 100%; */
         color: #AA9063;
         margin-top: 15%;
         text-align: center;
+        display: flex;
         }
         .description{
             font-family: 'Roboto';
@@ -238,6 +265,19 @@ width: 100%; */
             justify-content: center !important;
         }
         .buttons_count{
+            /* margin-left: 21%; */
+            display: flex;
+            /* justify-content: center; */
+            font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+align-items: center;
+letter-spacing: 0.08em;
+color: #6C6C6C;
+        }
+        .buttons_count_ar {
             /* margin-left: 21%; */
             display: flex;
             /* justify-content: center; */
@@ -260,6 +300,12 @@ color: #6C6C6C;
         justify-content: space-around;
         position: relative;
     }
+    .move_buttons_ar{
+        /* margin-left: 33%; */
+        margin-top: 22%;
+        display: flex;
+        justify-content: center;
+    }
     .heading_tag{
         font-family: 'Roboto';
         font-style: normal;
@@ -271,6 +317,7 @@ color: #6C6C6C;
         color: #AA9063;
         margin-top: 15%;
         text-align: center;
+        display: flex;
         }
         .description{
             font-family: 'Roboto';
@@ -301,11 +348,30 @@ align-items: center;
 letter-spacing: 0.08em;
 color: #6C6C6C;
         }
+        .buttons_count_ar {
+            /* margin-left: 21%; */
+            display: flex;
+            /* justify-content: center; */
+            font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+align-items: center;
+letter-spacing: 0.08em;
+color: #6C6C6C;
+        }
   }
 
   @media (min-width: 973px) {
     .move_buttons{
         margin-left: -33%;
+        margin-top: 9%;
+        display: flex;
+        justify-content: center;
+    }
+    .move_buttons_ar{
+        margin-left: 33%;
         margin-top: 9%;
         display: flex;
         justify-content: center;
@@ -320,6 +386,7 @@ color: #6C6C6C;
         letter-spacing: 0.08em;
         color: #AA9063;
         margin-top: 20%;
+        display: flex;
         }
         .description{
             font-family: 'Roboto';
@@ -336,6 +403,20 @@ color: #6C6C6C;
         }
         .buttons_count{
             margin-left: -33%;
+            /* margin-top: 9%; */
+            display: flex;
+            justify-content: center;
+            font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+align-items: center;
+letter-spacing: 0.08em;
+color: #6C6C6C;
+        }
+        .buttons_count_ar {
+            margin-left: 33%;
             /* margin-top: 9%; */
             display: flex;
             justify-content: center;

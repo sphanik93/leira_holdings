@@ -117,9 +117,16 @@ export default function Praposed_projects() {
   }
   }
 
-console.log('photoupdtaed',photo)
-  return (<div className="praposedbg mt-5">
-    <p className="business-lines-heading">Promised Projects</p>
+  let lang = JSON.parse(localStorage.getItem('language'))
+  let praposed_projects
+  if(lang == "ltr"){
+    praposed_projects = "Promised Projects"
+  } else{
+    praposed_projects = "المشاريع الموعودة"
+  }
+console.log(lang,'photoupdtaed',photo)
+  return (<div className="praposedbg mt-5" dir="ltr">
+    <p className="business-lines-heading">{praposed_projects}</p>
     <Desktop>
     <HeadShake>
         <div className="d-flex justiy-content-between mt-5">
@@ -136,7 +143,7 @@ console.log('photoupdtaed',photo)
         <div className="flip-box">
           <div class="flip-box-inner_3 ml-4">
             <img src={getimage(3)} class="img-width_3" />
-            <div className="mt-5">
+            <div className="mt-5"v dir={lang}>
             <p className="heading_tag">{headings}</p>
             <p className="description">{description}</p>
             </div>
@@ -155,11 +162,11 @@ console.log('photoupdtaed',photo)
             </div>
         </div>
         </HeadShake>
-        <div className="move_buttons">
+        <div className={lang == "ltr"?"move_buttons":"move_buttons_ar"}>
         <img src={arrowleft} class="arrow-left" title="" onClick={()=>moveimage('next')}/>
         <img src={arrowright} class="arrow-right ml-3" title="" onClick={()=>moveimage('prev')}/>
         </div>
-        <div className="buttons_count">
+        <div className={lang == "ltr"?"buttons_count":"buttons_count_ar"}>
         <p className="counting">{originalId }/{ photo.length}</p>
         </div>
         </Desktop>
@@ -179,7 +186,7 @@ console.log('photoupdtaed',photo)
         <div className="flip-box">
           <div class="flip-box-inner_3 ml-4">
             <img src={getimage(2)} class="img-width_3_2" />
-            <div className="mt-5">
+            <div className="mt-5" dir={lang}>
             <p className="heading_tag">{headings}</p>
             <p className="description">{description}</p>
             <button type="button" class="btn see_all_stories">SEE ALL STORIES</button>
@@ -197,11 +204,11 @@ console.log('photoupdtaed',photo)
           </div>
             </div>
         </div>
-        <div className="move_buttons">
+        <div className={lang == "ltr"?"move_buttons":"move_buttons_ar"}>
         <img src={arrowleft} class="arrow-left" title="" onClick={()=>moveimage('next')}/>
         <img src={arrowright} class="arrow-right ml-3" title="" onClick={()=>moveimage('prev')}/>
         </div>
-        <div className="buttons_count">
+        <div className={lang == "ltr"?"buttons_count":"buttons_count_ar"}>
         <p className="counting">{originalId }/{ photo.length}</p>
         </div>
         </Tablet>
@@ -211,7 +218,7 @@ console.log('photoupdtaed',photo)
         <div className="flip-box">
           <div class="flip-box-inner_3">
             <img src={getimage(1)} class="img-width_3" />
-            <div className="mt-5">
+            <div className="mt-5" dir={lang}>
             <p className="heading_tag">{headings}</p>
             <p className="description mt-5 m-4">{description}</p>
             <div style={{display: 'flex',justifyContent: 'center'}}>
@@ -221,12 +228,13 @@ console.log('photoupdtaed',photo)
           </div>
         </div>
         </div>
-        <div className="move_buttons">
+        
+        <div className={lang == "ltr"?"move_buttons":"move_buttons_ar"}>
         <img src={arrowleft} class="arrow-left" title="" onClick={()=>moveimage('next')}/>
-        <p className="buttons_count">{originalId }/{ photo.length}</p>
+        <p className={lang == "ltr"?"buttons_count":"buttons_count_ar"}>{originalId }/{ photo.length}</p>
         <img src={arrowright} class="arrow-right" title="" onClick={()=>moveimage('prev')}/>
         </div>
-        {/* <div className="buttons_count">
+        {/* <div className={lang == "ltr"?"buttons_count":"buttons_count_ar"}>
         <p className="counting">{originalId }/{ photo.length}</p>
         </div> */}
         </Mobile>

@@ -109,7 +109,7 @@ align-items: center;
 /* text-align: center; */
 letter-spacing: 0.08em;
 color: #AB8F67;
-
+display: flex;
 }
 
 .third_banner{

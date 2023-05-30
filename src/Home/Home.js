@@ -5,6 +5,7 @@ import home_1 from '../assets/Home_1.png';
 import home_2 from '../assets/Home_2.png';
 import '../Home/home.css'
 import Graph from "./Components/Graph";
+import Graph_ar from "./Components/arabic/Graph_ar.js";
 import Thired_phase from "./Components/thired_phase.js";
 import Praposed_projects from "./Components/praposed_projects";
 import OurApproach from "./Components/OurApproach.js";
@@ -16,9 +17,10 @@ import { useMediaQuery } from "react-responsive";
 
 export function Homepage1() {
   const [blackMenu, setGoldmenu] = useState(false)
-  const [langChange, setLangChange] = useState('eng')
+  const [langChange, setLangChange] = useState('ltr')
   useEffect(() => {
-
+    let language = JSON.parse(localStorage.getItem('language'));
+    setLangChange(language)
   }, [])
 
   const Tablet = ({ children }) => {
@@ -40,10 +42,21 @@ export function Homepage1() {
   //     console.log('inside not scroll',window.pageYOffset)
   //   }
   // })
-  return (<div>
-    <Header />
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
+
+  function changelanguage(lan){
+    setLangChange(lan)
+  }
+
+  let readMore
+  if(langChange == "ltr"){
+    readMore = "Read More"
+  } else{
+    readMore = "اقرأ أكثر"
+  }
+return (<div dir={langChange}>
+    <Header langset={changelanguage}/>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" dir="">
+      <ol className={langChange === "ltr"? "carousel-indicators":"carousel-indicators_ar"}>
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -78,7 +91,7 @@ export function Homepage1() {
         }}>
         </div>
       </div>
-      <div class="" style={{ display: "flex", justifyContent: 'center' }}>
+      <div class="" style={{ display: "flex", justifyContent: 'center' }} dir="ltr">
         <Tablet>
           <div class={"col-md-4 col-xl-3 col-sm-5 col-lg-3 col-xs-3 curosalmoveallignment row justify-content-center"} data-bs-slide="prev">
             <div class="carousel-prev"><a href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -86,7 +99,7 @@ export function Homepage1() {
               <span class="sr-only">Previous</span>
             </a>
             </div>
-            <p className="readmore">Read More</p>
+            <p className="readmore">{readMore}</p>
             <div class="carousel-next" ><a href="#carouselExampleIndicators" role="button" data-slide="next">
               <span class="carousel-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
@@ -101,7 +114,7 @@ export function Homepage1() {
               <span class="sr-only">Previous</span>
             </a>
             </div>
-            <p className="readmore">Read More</p>
+            <p className="readmore">{readMore}</p>
             <div class="carousel-next" ><a href="#carouselExampleIndicators" role="button" data-slide="next">
               <span class="carousel-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
@@ -116,7 +129,7 @@ export function Homepage1() {
               <span class="sr-only">Previous</span>
             </a>
             </div>
-            <p className="readmore">Read More</p>
+            <p className="readmore">{readMore}</p>
             <div class="carousel-next" ><a href="#carouselExampleIndicators" role="button" data-slide="next">
               <span class="carousel-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
@@ -130,7 +143,7 @@ export function Homepage1() {
       <Zoom right cascade>
         <p className="business-lines-heading">Business Lines</p>
       </Zoom>
-      <Graph />
+      {langChange == "ltr"?<Graph />:<Graph_ar />}
     </div>
     <Thired_phase />
     <Praposed_projects />

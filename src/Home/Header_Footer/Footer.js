@@ -16,6 +16,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Footer() {
     let navigate = useNavigate();
 
+    let lang = JSON.parse(localStorage.getItem('language'))
 
     return (
         <div>
@@ -48,7 +49,7 @@ export default function Footer() {
                                 <img src={linkedin} className="navbar-social-icons" />
                             </div>
                             <div className="mt-4 ml-2">
-                                <span className="newsletter">Newsletter</span>
+                                <span className={lang=="ltr"?"newsletter":"newsletter_ar"}>Newsletter</span>
                             </div>
                             <div className="ml-2">
                                 <input type="" className="newsletter_input" /><img src={arrow} className="newsletter_arrow" />
@@ -59,7 +60,7 @@ export default function Footer() {
             </MediaQuery>
             <MediaQuery maxWidth={770}>
                 <div className="footer-layout-mobile">
-                    <div className="d-flex flex-column mobile-footer">
+                    <div className={lang == "ltr" ? "d-flex flex-column mobile-footer":"d-flex flex-column mobile-footer m-5"} dir="rtl">
                         <img src={logo} className="footerlogo_mobile" />
 
                         <div onClick={() => navigate('/')} className="cursoerNav">Home</div>
@@ -67,9 +68,9 @@ export default function Footer() {
                         <div className="cursoerNav">Business Lines</div>
                         <div className="cursoerNav">Projects</div>
                         <div className="cursoerNav">Approach</div>
-                        <div className="mt-4"><img src={phone_ring} className="mobil-footer-img mr-2" />(+971) - 8829921232</div>
-                        <div><img src={mail_icon} className="mobil-footer-img mr-2" />support@leiraholding.com</div>
-                        <div className="mt-2">
+                        <div className={lang=="ltr"?"mt-4":"mt-4 phonemail_ar"}><img src={phone_ring} className="mobil-footer-img mr-2" />(+971) - 8829921232</div>
+                        <div className={lang=="ltr"?"":"phonemail_ar"}><img src={mail_icon} className="mobil-footer-img mr-2" />support@leiraholding.com</div>
+                        <div className={lang=="ltr"?"mt-2":"mt-2 phonemail_ar"}>
                             © 2023 LEIRA. Design & Developed by Eterna
                         </div>
                         <div className="d-flex justify-content-between setwidthflex mt-5">
@@ -79,8 +80,8 @@ export default function Footer() {
                             <img src={skype} className="navbar-social-icons_mobile" />
                             <img src={linkedin} className="navbar-social-icons_mobile" />
                         </div>
-                        <span className="newsletter">Newsletter</span>
-                        <div className="">
+                        <span className={lang == "ltr" ?"newsletter":"newsletter_ar"}>Newsletter</span>
+                        <div className={lang == "ltr"?"":"phonemail_ar"}>
                             <input type="" className="newsletter_input_mobile" /><img src={arrow} className="newsletter_arrow" />
                         </div>
                     </div>
