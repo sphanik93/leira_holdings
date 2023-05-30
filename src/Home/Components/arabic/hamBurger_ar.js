@@ -75,7 +75,7 @@ export default function Hamburger_ar(props) {
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body mt-5">
+          <div class="modal-body_ar mt-5">
           <MediaQuery maxWidth={770}>
           <button type="button" class={langChange == "eng" ? "btn-sm border border-warning langEng" : "btn-sm border border-warning langArab"} onClick={() => languageChange('eng')} >ENGLISH</button>
         <button type="button" class={langChange == "arab" ? "btn-sm border border-warning langEngArab" : "btn-sm border border-warning langArabEng"} onClick={() => languageChange('arab')}>ٱلشَّارقَة</button>
@@ -86,20 +86,20 @@ export default function Hamburger_ar(props) {
               <img src={expandIcon} className="plusiconsrc" onClick={() => caniexpandbusiness()} />
               خطوط الأعمال
             </p>
-            {expanding && <>
+            {expanding && <div className="mt-4">
               {businessLines.map((line) => (
                 <p className={selectedMenu != line ? "business-lines_ar" : "business-lines-selected_ar"} onClick={(e) => selectingMenu(e)}>{line}</p>
               ))}
-            </>}
+            </div>}
             <p className="model-body-text_ar">
               <img src={expandIcon} className="plusiconsrc" onClick={() => caniexpandproject()} />
               المشاريع
             </p>
-            {projectexpand && <>
+            {projectexpand && <div className="mt-4">
               {businessLines.map((line) => (
                 <p className={selectedMenu !== line ? "business-lines_ar" : "business-lines-selected_ar"} onClick={(e) => selectingMenu(e)}>{line}</p>
               ))}
-            </>}
+            </div>}
           </div>
           <div className="mt-5 modal-footer_ar mr-5">
             <button type="button" class="btn btn-warning_ar" onClick={(e)=>selectingMenu("CONTACT US")}>اتصل بنا</button>

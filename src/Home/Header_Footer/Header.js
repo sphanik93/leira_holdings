@@ -78,9 +78,9 @@ export default function Header(props) {
       </MediaQuery>
         {!blackMenu ? 
         isblack?
-        <img src={menu_white} class="hamberIcon ml-4  m-3" data-toggle="modal" data-target="#exampleModal" onClick={() => settingMenu(true)}/>:
-        <img src={hambericon} class="hamberIcon ml-4  m-3" data-toggle="modal" data-target="#exampleModal" onClick={() => settingMenu(true)} /> :
-          <img src={gold_menu} style={{ marginRight: "-2% im" }} class="hamberIcon ml-4  m-3" data-toggle="modal" data-target="#exampleModal" onClick={() => settingMenu(false)} />
+        <img src={menu_white} class="hamberIcon ml-5  m-3 mr-5" data-toggle="modal" data-target="#exampleModal" onClick={() => settingMenu(true)}/>:
+        <img src={hambericon} class="hamberIcon ml-5  m-3 mr-5" data-toggle="modal" data-target="#exampleModal" onClick={() => settingMenu(true)} /> :
+          <img src={gold_menu} style={{ marginRight: "-2% im" }} class="hamberIcon ml-5 m-3 mr-5" data-toggle="modal" data-target="#exampleModal" onClick={() => settingMenu(false)} />
         }
 
       </div>

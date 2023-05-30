@@ -77,11 +77,15 @@
 .close_ar {
     float: left;
     font-size: 1.5rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 1;
     color: #000;
     text-shadow: 0 1px 0 #fff;
     opacity: 1;
+    font-size: 40px;
+    font-weight: 100;
+    background-color: black !important;
+
 }
 
 button.close_ar {
@@ -89,9 +93,28 @@ button.close_ar {
     background-color: #232323 !important;
     border: 0;
     -webkit-appearance: none;
+    font-size: 40px;
+    font-weight: 100;
+    background-color: black !important;
 
 }
 
+.close_ar:focus, .close_ar:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: .75;
+}
+
+.modal-body_ar {
+    position: fixed;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+    color: white;
+    text-align: left;
+    margin-top: 4% !important;
+}
 .model-body-text_ar {
     font-family: 'Roboto';
     font-style: normal;
@@ -161,6 +184,8 @@ button.close_ar {
     height: 40px;
     border-radius: 6px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-warning_ar {
@@ -173,6 +198,8 @@ button.close_ar {
     height: 40px;
     border-radius: 6px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .langEng {

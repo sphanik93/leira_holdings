@@ -78,20 +78,20 @@ export default function Hamburger(props) {
               <img src={expandIcon} className="plusiconsrc" onClick={() => caniexpandbusiness()} />
               business lines
             </p>
-            {expanding && <>
+            {expanding && <div className="mt-4">
               {businessLines.map((line) => (
                 <p className={selectedMenu != line ? "business-lines" : "business-lines-selected"} onClick={(e) => selectingMenu(e)}>{line}</p>
               ))}
-            </>}
+            </div>}
             <p className="model-body-text">
               <img src={expandIcon} className="plusiconsrc" onClick={() => caniexpandproject()} />
               PROJECTS
             </p>
-            {projectexpand && <>
+            {projectexpand && <div className="mt-4">
               {businessLines.map((line) => (
                 <p className={selectedMenu !== line ? "business-lines" : "business-lines-selected"} onClick={(e) => selectingMenu(e)}>{line}</p>
               ))}
-            </>}
+            </div>}
           </div>
           <div className="mt-5 model-footer ml-5">
             <button type="button" class="btn btn-warning" onClick={(e)=>selectingMenu('CONTACT US')}>CONTACT US</button>
