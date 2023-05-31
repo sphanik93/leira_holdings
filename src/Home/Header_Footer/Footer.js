@@ -33,8 +33,8 @@ export default function Footer() {
                                 <div className="cursoerNav">Approach</div>
                             </div>
                             <div className="d-flex justify-content-around mt-4" id="box-footer">
-                                <div><img src={phone_ring} className="navbar-icons mr-2" />(+971) - 8829921232</div>
-                                <div><img src={mail_icon} className="navbar-icons1 mr-2" />support@leiraholding.com</div>
+                                <div><img src={phone_ring} className={lang == "ltr"?"navbar-icons mr-2":"navbar-icons ml-2"} />(+971) - 8829921232</div>
+                                <div><img src={mail_icon} className={lang == "ltr"?"navbar-icons1 mr-2":"navbar-icons ml-2"} />support@leiraholding.com</div>
                             </div>
                             <div className="mt-5">
                                 © 2023 LEIRA. Design & Developed by Eterna
@@ -68,8 +68,8 @@ export default function Footer() {
                         <div className="cursoerNav">Business Lines</div>
                         <div className="cursoerNav">Projects</div>
                         <div className="cursoerNav">Approach</div>
-                        <div className={lang=="ltr"?"mt-4":"mt-4 phonemail_ar"}><img src={phone_ring} className={lang == "ltr"?"mobil-footer-img mr-2":"mobil-footer-img_ar mr-2"} />(+971) - 8829921232</div>
-                        <div className={lang=="ltr"?"":"phonemail_ar"}><img src={mail_icon} className={lang == "ltr"?"mobil-footer-img mr-2":"mobil-footer-img_ar mr-2"} />support@leiraholding.com</div>
+                        <div className={lang=="ltr"?"mt-4":"mt-4 phonemail_ar"}><img src={phone_ring} className={lang == "ltr"?"mobil-footer-img mr-2":"mobil-footer-img_ar ml-2"} />(+971) - 8829921232</div>
+                        <div className={lang=="ltr"?"":"phonemail_ar"}><img src={mail_icon} className={lang == "ltr"?"mobil-footer-img mr-2":"mobil-footer-img_ar ml-2"} />support@leiraholding.com</div>
                         <div className={lang=="ltr"?"mt-2":"mt-2 phonemail_ar"}>
                             © 2023 LEIRA. Design & Developed by Eterna
                         </div>
