@@ -76,7 +76,7 @@ export default function OurApproach() {
                                 <div className={lang == "ltr" ? "square" : "square_ar"}>
                                     <Flip right cascade>
                                         {listSelected == "values that matters" ?
-                                            <div className="m-3">
+                                            <div className="m-5">
                                                 <p className={lang == "ltr" ? "square_font-size" : "square_font-size_ar"}>We recognize the importance of managing our resources responsibly and minimizing our impact on the environment. We are committed to promoting sustainability both within our organization and in the solutions, we provide to our clients.</p>
 
                                                 <p className={lang == "ltr" ? "square_font-size" : "square_font-size_ar"}>These values reflect our commitment to providing exceptional service, operating with integrity and transparency, working collaboratively, embracing innovation, and promoting sustainability.</p>
@@ -115,9 +115,10 @@ export default function OurApproach() {
                                 height: "200px",
                             }}>
                                 <div className={lang == "ltr" ? "square_mobile" : "square_mobile_ar"}>
-                                    <p className="ourapproach_matter_mobile m-2">{list.name}</p>
-                                    <p className="m-2">{list.text}</p>
-
+                                    <div className="m-4">
+                                    <p className="ourapproach_matter_mobile">{list.name}</p>
+                                    <p className="">{list.text}</p>
+                                    </div>
                                 </div>
                             </div>}</>
                     ))}

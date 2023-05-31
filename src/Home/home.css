@@ -231,7 +231,10 @@
     font-size: 18px;
     width: 132px;
     height: 42px;
+    outline: none !important;
+    box-shadow: none !important;
 }
+
 
 .langArab {
     background-color: #FFFFFF !important;
@@ -244,6 +247,8 @@
     font-size: 18px;
     width: 132px;
     height: 42px;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .langEngArab {
@@ -258,6 +263,8 @@
     font-size: 18px;
     width: 132px;
     height: 42px;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .langArabEng {
@@ -269,6 +276,8 @@
     font-size: 18px;
     width: 132px;
     height: 42px;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .rightCorner {
@@ -387,7 +396,7 @@ button.close {
 }
 
 .fade.show {
-    opacity: 0.98;
+    opacity: 0.8;
 }
 
 .model-body-text-selected {
@@ -696,8 +705,8 @@ button.close {
 }
 
 #box-footer {
-    /* display: flex; */
-    gap: 40px;
+    display: inherit;
+    gap: 7px;
 }
 
 .navbar-icons {
@@ -727,14 +736,39 @@ button.close {
 
 .newsletter_input {
     border-radius: 33px;
+    margin-right: 11%;
+    width: 95%;
+    height: 32px;
+}
+.newsletter_input_ar {
+    border-radius: 33px;
+    margin-right: 0%;
+    width: 100%;
+    height: 32px;
 }
 
 .newsletter_arrow {
     width: 16px;
-    margin-left: -28px;
+    margin-left: -65px;
     margin-top: -3px;
 }
 
+.newsletter_arrow_ar {
+    width: 16px;
+    margin-left: -28px;
+    margin-top: 11px;
+    margin-right: -37px;
+    position: absolute;
+    transform: scaleX(-1);
+}
+.newsletter_arrow_mobile_ar {
+    width: 16px;
+    /* margin-left: -28px; */
+    margin-top: 12px;
+    margin-right: 54%;
+    position: absolute;
+    transform: scaleX(-1);
+}
 .footer-layout-mobile {
     position: relative;
     left: 0;
@@ -770,7 +804,8 @@ button.close {
 .mobil-footer-img_ar {
     width: 4%;
     margin-left: 2%;
-    height: 22px;
+    height: 18px;
+    margin-top: 6px;
 }
 
 .newsletter_input_mobile {
@@ -904,7 +939,7 @@ button.close {
         margin: auto;
         width: 382px;
         /* height: 100%; */
-        right: -8%;
+        right: -17%;
         margin-top: 22%;
     }
 
@@ -938,9 +973,9 @@ button.close {
     .modal-dialog {
         position: fixed;
         margin: auto;
-        width: 440px;
+        width: 453px;
         /* height: 100%; */
-        right: -4.9%;
+        right: -6.3%;
         margin-top: 9%;
     }
 

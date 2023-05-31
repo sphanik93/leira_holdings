@@ -42,17 +42,17 @@ export default function Footer() {
                         </div>
                         <div className="d-flex flex-column">
                             <div className=" mt-5" id="box-footer">
-                                <img src={twitter} className="navbar-social-icons" />
-                                <img src={facebook} className="navbar-social-icons" />
-                                <img src={insta} className="navbar-social-icons" />
-                                <img src={skype} className="navbar-social-icons" />
-                                <img src={linkedin} className="navbar-social-icons" />
+                                <img src={twitter} className={lang == "ltr" ?"navbar-social-icons ml-3":"navbar-social-icons ml-3"} />
+                                <img src={facebook} className={lang == "ltr" ?"navbar-social-icons ml-3":"navbar-social-icons ml-3"} />
+                                <img src={insta} className={lang == "ltr" ?"navbar-social-icons ml-3":"navbar-social-icons ml-3"} />
+                                <img src={skype} className={lang == "ltr" ?"navbar-social-icons ml-3":"navbar-social-icons ml-3"} />
+                                <img src={linkedin} className={lang == "ltr" ?"navbar-social-icons ml-3":"navbar-social-icons ml-3"} />
                             </div>
-                            <div className="mt-4 ml-2">
+                            <div className="mt-4 ml-4">
                                 <span className={lang=="ltr"?"newsletter":"newsletter_ar"}>Newsletter</span>
                             </div>
-                            <div className="mr-4">
-                                <input type="" className="newsletter_input" /><img src={arrow} className="newsletter_arrow" />
+                            <div className="">
+                                <input type="" className={lang == "ltr" ?"newsletter_input":"newsletter_input_ar"} placeholder="Enter your Email ID"/><img src={arrow} className={lang == "ltr"?"newsletter_arrow":"newsletter_arrow_ar"} />
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ export default function Footer() {
                         </div>
                         <span className={lang == "ltr" ?"newsletter":"newsletter_ar"}>Newsletter</span>
                         <div className={lang == "ltr"?"":"phonemail_ar"}>
-                            <input type="" className="newsletter_input_mobile" /><img src={arrow} className="newsletter_arrow" />
+                            <input type="" className="newsletter_input_mobile" placeholder="Enter your Email ID"/><img src={arrow} className={lang == "ltr"?"newsletter_arrow":"newsletter_arrow_mobile_ar"} />
                         </div>
                     </div>
                 </div>

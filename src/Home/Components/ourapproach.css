@@ -213,31 +213,33 @@ div.scrollmenu a {
 }
 
 .square_mobile {
-    width: 60%;
-    height: 179PX;
+    width: 71%;
+    height: 183PX;
     border-color: #AA9063;
     border-style: solid;
-    margin-top: 5%;
-    margin-left: 19%;
+    margin-top: 3%;
+    margin-left: 14%;
     position: absolute;
     z-index: 1;
     background-color: #fff;
     transition: transform .2s;
+    border-radius: 9px
     /* Animation */
 }
 
 .square_mobile_ar {
-    width: 60%;
-    height: 179PX;
+    width: 71%;
+    height: 183PX;
     border-color: #AA9063;
     border-style: solid;
-    margin-top: 5%;
-    margin-right: 19%;
+    margin-top: 3%;
+    margin-right: 14%;
     position: absolute;
     z-index: 1;
     background-color: #fff;
     transition: transform .2s;
     text-align: right;
+    border-radius: 9px
     /* Animation */
 }
 
