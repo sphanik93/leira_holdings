@@ -39,10 +39,10 @@ export function BankPage() {
             }}>
                 <LightSpeed left cascade>
                 <div className="text-onBG">
-                    <p className="leira_bank">Leira Bank</p>
+                    <p className="leira_bank mt-5">Leira Bank</p>
                     <p className="leira_bank_des">Welcome to Leira Holding, a dynamic and
                         forward-thinking company</p>
-                    <p className="leira_bank_longdesc mt-5">that specializes in building mega projects with a focus on the future. As a relatively new player in the industry, Leira Holding pursues strategic, sustainable, and economically feasible investments in vital and promising sectors, as well as viable long-term projects, with the goal of creating a clear and sustainable socioeconomic impact and aligning its objectives with the global strategic investment direction. At Leira, we are passionate about what we do and are always seeking new and creative ways to bring value to our clients and stakeholders. This includes using the latest technologies, implementing sustainable building practices, and collaborating with the best and brightest minds in the industry.</p>
+                    <p className="leira_bank_longdesc mt-3">that specializes in building mega projects with a focus on the future. As a relatively new player in the industry, Leira Holding pursues strategic, sustainable, and economically feasible investments in vital and promising sectors, as well as viable long-term projects, with the goal of creating a clear and sustainable socioeconomic impact and aligning its objectives with the global strategic investment direction. At Leira, we are passionate about what we do and are always seeking new and creative ways to bring value to our clients and stakeholders. This includes using the latest technologies, implementing sustainable building practices, and collaborating with the best and brightest minds in the industry.</p>
                 </div>
                 </LightSpeed>
             </div>

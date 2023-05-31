@@ -44,6 +44,7 @@ export default function Header(props) {
       dir = "rtl"
     }
     props.langset(dir)
+    setGoldmenu(false)
     localStorage.setItem('language', JSON.stringify(dir));
   }
 

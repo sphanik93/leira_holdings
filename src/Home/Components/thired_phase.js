@@ -67,7 +67,7 @@ export default function Thired_phase() {
                 {/* <p className="invest-in-future-subheading">Leira future Smart City</p> */}
                 <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
 
-                <div class="mt-5 d-flex flex-column" style={{ display: "" }}>
+                <div class="mt-5 d-flex flex-column invest_buttons_align" style={{ display: "" }}>
                   <div class={""} dir="ltr">
                     <a href="#carousel2ExampleIndicators" role="button" data-slide="prev"><img src={arrowleft} class="arrow-left" title="" onClick={() => nextIndicater('prev')} /></a>
                     <span class="count_div ml-3 mr-3">{current} / {totalItems}</span>

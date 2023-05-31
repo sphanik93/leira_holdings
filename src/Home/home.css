@@ -767,6 +767,12 @@ button.close {
     width: 4%;
 }
 
+.mobil-footer-img_ar {
+    width: 4%;
+    margin-left: 2%;
+    height: 22px;
+}
+
 .newsletter_input_mobile {
     width: 74%;
     border-radius: 33px;
@@ -889,7 +895,7 @@ button.close {
         border: 1px solid rgba(0, 0, 0, .2);
         border-radius: 0.3rem;
         outline: 0;
-        height: 572px;
+        height: 577px;
         border-radius: 8px
     }
 

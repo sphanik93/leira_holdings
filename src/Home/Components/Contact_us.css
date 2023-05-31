@@ -2,12 +2,14 @@
     /* bottom: 0; */
     position: absolute;
     /* margin-left: 5% !important; */
-    
+
     margin: 4%;
 }
-.topset{
+
+.topset {
     margin-top: 24%;
 }
+
 .contact_text {
     width: 269px;
     height: 102px;
@@ -102,7 +104,7 @@
     margin-left: 45%;
 }
 
-.circle_square_box:hover{
+.circle_square_box:hover {
     transform: scale(1.2);
 }
 
@@ -147,25 +149,28 @@
     height: 11px;
 }
 
-.div-type-width{
+.div-type-width {
     width: 82%;
 }
 
 @media screen and (min-device-width: 768px) {
-.flexing{
-    display: flex;
+    .flexing {
+        display: flex;
+    }
+
+    .contact_input_box {
+        width: 288px;
+        height: 55px;
+        background: #FFFFFF;
+        border: 0.681522px solid #828282;
+    }
 }
-.contact_input_box {
-    width: 288px;
-    height: 55px;
-    background: #FFFFFF;
-    border: 0.681522px solid #828282;
-}
-}
+
 @media screen and (max-width: 767px) {
-    .flexing{
+    .flexing {
         /* display: flex; */
     }
+
     .contact_input_box {
         width: 168px;
         height: 55px;
@@ -183,7 +188,8 @@
         margin-top: 17%;
         margin-left: 8%;
     }
-    }
+}
+
 @media screen and (max-width: 588px) {
     .circle_square_box {
         background-color: #000000;
@@ -193,8 +199,9 @@
         margin-top: 17%;
         margin-left: 8%;
     }
-    }
-@media only screen and (max-width: 1028px) and (min-width: 588px)  {
+}
+
+@media only screen and (max-width: 1028px) and (min-width: 588px) {
     .circle_square_box {
         background-color: #000000;
         width: 80%;
@@ -203,4 +210,69 @@
         margin-top: 17%;
         margin-left: 8%;
     }
+}
+
+.trustline {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 23px;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.trusline_des {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #000000;
+}
+.trustline_ar {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 23px;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #000000;
+    text-align: right;
+}
+
+.trusline_des_ar {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #000000;
+    text-align: right;
+}
+@media screen and (max-width: 767px) {
+    .widthing_trustline{
+        /* width: 42%; */
+        margin: 3% !important;
+        margin-left: 9% !important;
+        margin-top: 5% !important;
+    }
+}
+@media screen and (min-device-width: 768px) {
+.widthing_trustline{
+    width: 42%;
+    margin: 3% !important;
+    margin-left: 9% !important;
+    margin-top: 5% !important;
+}
+}
+.mail{
+    color: #AA9063;
+    text-decoration: underline;
 }

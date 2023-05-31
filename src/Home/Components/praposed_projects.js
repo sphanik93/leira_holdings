@@ -227,9 +227,9 @@ export default function Praposed_projects() {
         </div>
       </div>
 
-      <div className={lang == "ltr" ? "move_buttons" : "move_buttons_ar"}>
+      <div className="move_buttons">
         <img src={arrowleft} class="arrow-left" title="" onClick={() => moveimage('next')} />
-        <p className={lang == "ltr" ? "buttons_count" : "buttons_count_ar"}>{originalId}/{photo.length}</p>
+        <p className="buttons_count">{originalId}/{photo.length}</p>
         <img src={arrowright} class="arrow-right" title="" onClick={() => moveimage('prev')} />
       </div>
       {/* <div className={lang == "ltr"?"buttons_count":"buttons_count_ar"}>

@@ -23,6 +23,8 @@ export function Contact_Us(props) {
         let language = JSON.parse(localStorage.getItem('language'));
         setLangChange(language)
       }, [])
+      let lang = JSON.parse(localStorage.getItem('language'))
+
     return (
         <div  dir={langChange}>
             <Header path={'HOME'} page={'/ CONTACT US'} langset={changelanguage}/>
@@ -102,6 +104,11 @@ export function Contact_Us(props) {
                     <div className="circle_map "></div>
                     </div>
                 </div>
+            </div>
+            <div className="widthing_trustline m-5">
+                <p class={lang == "ltr" ?"trustline":"trustline_ar"}>TRUSTLINE</p>
+                <p className={lang == "ltr"? "trusline_des":"trusline_des_ar"}>Leira Holdings recognises the value of transparency and accountability in its management practices and supports the right of individuals to report fraud or unethical behaviour.</p>
+                <p className={lang == "ltr"? "trusline_des mt-5":"trusline_des_ar mt-5"}>Please address your concerns via our dedicated website <span className="mail">leira.trustline.com</span></p>
             </div>
             <Footer />
         </div>
