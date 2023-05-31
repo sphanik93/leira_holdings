@@ -17,7 +17,7 @@ export default function Footer() {
     let navigate = useNavigate();
 
     let lang = JSON.parse(localStorage.getItem('language'))
-    console.log('ltr---',lang)
+
     return (
         <div>
             <MediaQuery minWidth={770}>

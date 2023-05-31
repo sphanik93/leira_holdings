@@ -30,7 +30,7 @@ export default function Hamburger_ar(props) {
     projectexpand ? setProjectexpand(false) : setProjectexpand(true)
   }
   function selectingMenu(link) {
-    console.log('eeee',link)
+
     if(link == 'HOME'){
       navigate('/');
     }
@@ -64,7 +64,7 @@ export default function Hamburger_ar(props) {
     props.langset(lang)
     localStorage.setItem('language', JSON.stringify(dir));
   }
-  console.log('language',langChange)
+
   return (
     <div className="d-flex flex-row-reverse" dir="rtl">
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -77,8 +77,8 @@ export default function Hamburger_ar(props) {
           </div>
           <div class="modal-body_ar mt-5">
           <MediaQuery maxWidth={770}>
-          <button type="button" class={langChange == "eng" ? "btn-sm border border-warning langEng" : "btn-sm border border-warning langArab"} onClick={() => languageChange('eng')} >ENGLISH</button>
-        <button type="button" class={langChange == "arab" ? "btn-sm border border-warning langEngArab" : "btn-sm border border-warning langArabEng"} onClick={() => languageChange('arab')}>ٱلشَّارقَة</button>
+          <button type="button" class={langChange == "eng" ? "btn-sm border border-warning langEng_mobile_ar" : "btn-sm border border-warning langArab_mobile_ar"} onClick={() => languageChange('eng')} >ENGLISH</button>
+        <button type="button" class={langChange == "arab" ? "btn-sm border border-warning langEngArab_mobile_ar" : "btn-sm border border-warning langArabEng_mobile_ar"} onClick={() => languageChange('arab')}>ٱلشَّارقَة</button>
         </MediaQuery>
             <p className={selectedMenu !== "HOME" ? "model-body-text_ar" : "model-body-text-selected_ar"} onClick={(e) => selectingMenu("HOME")}>بيت</p>
             <p className={selectedMenu !== "ABOUT" ? "model-body-text_ar" : "model-body-text-selected_ar"} onClick={(e) => selectingMenu("ABOUT")}>عن</p>

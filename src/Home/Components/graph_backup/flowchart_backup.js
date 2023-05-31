@@ -59,7 +59,6 @@ export default function FlowChart() {
 
     function onmouseOut(id, img) {
         // document.getElementById(id).src = img;
-        console.log('====',id)
         if (id == "img") {
             setSetHover4(false)
             setSetHover5(false)

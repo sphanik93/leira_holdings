@@ -17,20 +17,16 @@ export default function Header(props) {
   const [isblack, setIsBlack] = useState(true)
 
   function isblackMenu(mes) {
-    console.log(mes,'.es==')
     setGoldmenu(mes)
-
   }
 
   window.addEventListener('scroll', function () {
     if (window.pageYOffset > 500) {
-      // console.log('inside scroll',window.pageYOffset)
       $(".navclass").css("background" , "#fff");
       $(".scroll-class").css("-webkit-filter" , "");
       setIsBlack(false)
     }else{
       setIsBlack(true)
-      // console.log('inside not scroll',window.pageYOffset)
       $(".scroll-class").css("-webkit-filter" , "");
       $(".navclass").css("background" , "#0000");
     }
@@ -47,7 +43,6 @@ export default function Header(props) {
     } else{
       dir = "rtl"
     }
-    console.log('lang==',lang,dir)
     props.langset(dir)
     localStorage.setItem('language', JSON.stringify(dir));
   }

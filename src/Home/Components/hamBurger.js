@@ -27,7 +27,6 @@ export default function Hamburger(props) {
     projectexpand ? setProjectexpand(false) : setProjectexpand(true)
   }
   function selectingMenu(link) {
-    console.log(link,'eeee')
     if(link == 'HOME'){
       navigate('/');
     }
@@ -69,8 +68,8 @@ export default function Hamburger(props) {
           </div>
           <div class="modal-body mt-5 ml-4">
           <MediaQuery maxWidth={770}>
-          <button type="button" class={langChange == "eng" ? "btn-sm border border-warning langEng" : "btn-sm border border-warning langArab"} onClick={() => languageChange('eng')} >ENGLISH</button>
-        <button type="button" class={langChange == "arab" ? "btn-sm border border-warning langEngArab" : "btn-sm border border-warning langArabEng"} onClick={() => languageChange('arab')}>ٱلشَّارقَة</button>
+          <button type="button" class={langChange == "eng" ? "btn-sm border border-warning langEng_mobile" : "btn-sm border border-warning langArab_mobile"} onClick={() => languageChange('eng')} >ENGLISH</button>
+        <button type="button" class={langChange == "arab" ? "btn-sm border border-warning langEngArab_mobile mb-3" : "btn-sm border border-warning langArabEng_mobile mb-3"} onClick={() => languageChange('arab')}>ٱلشَّارقَة</button>
         </MediaQuery>
             <p className={selectedMenu !== "HOME" ? "model-body-text" : "model-body-text-selected"} onClick={(e) => selectingMenu("HOME")}>Home</p>
             <p className={selectedMenu !== "ABOUT" ? "model-body-text" : "model-body-text-selected"} onClick={(e) => selectingMenu("ABOUT")}>About</p>

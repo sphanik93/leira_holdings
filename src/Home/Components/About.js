@@ -16,35 +16,28 @@ export function About_us(props) {
 
     window.addEventListener('scroll', function () {
         if (window.pageYOffset < 200) {
-          console.log('insidescrolling',window.pageYOffset)
           $(".scroll-classtop").css("-webkit-filter" , "grayscale(0%)");
         } else{
-          console.log('insidenot',window.pageYOffset)
           $(".scroll-classtop").css("-webkit-filter" , "grayscale(100%)");
         }
         
         if (window.pageYOffset > 0 && this.window.pageYOffset < 550) {
-            console.log('insidescrolling1',window.pageYOffset)
           $(".scroll-class1").css("-webkit-filter" , "grayscale(100%)");
         } else if((window.pageYOffset > 988 && this.window.pageYOffset < 1247)){
           $(".scroll-class1").css("-webkit-filter" , "grayscale(100%)");
         }else{
-          console.log('insidenot',window.pageYOffset)
           $(".scroll-class1").css("-webkit-filter" , "grayscale(0%)");
         }
         
         if (window.pageYOffset < 1120) {
-            console.log('insidescrolling12',window.pageYOffset)
           $(".scroll-class2").css("-webkit-filter" , "grayscale(100%)");
         } else{
-          console.log('insidenot',window.pageYOffset)
           $(".scroll-class2").css("-webkit-filter" , "grayscale(0%)");
         }
         
       })
 
       function changelanguage(lan){
-        console.log('langu',lan)
         setLangChange(lan)
       }
 
@@ -52,8 +45,8 @@ export function About_us(props) {
         let language = JSON.parse(localStorage.getItem('language'));
         setLangChange(language)
       }, [])
-console.log(']]]]]]]',langChange)
-    return (
+
+      return (
         <div className="" dir={langChange}>
             <Header path={'HOME'} page={'/ ABOUT'} langset={changelanguage}/>
             <div class="scroll-classtop" style={{

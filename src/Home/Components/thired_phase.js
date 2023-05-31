@@ -7,7 +7,7 @@ import "./thired-phase.css"
 import $ from 'jquery';
 import arrowright from "../../assets/icons-right.png";
 import arrowleft from "../../assets/icons-left.png";
-import {Zoom, Flip, Bounce, Fade} from 'react-reveal';
+import { Zoom, Flip, Bounce, Fade } from 'react-reveal';
 
 
 export default function Thired_phase() {
@@ -17,19 +17,6 @@ export default function Thired_phase() {
   useEffect(() => {
     settotalItems($('.thired-phase').length)
   }, [])
-
-  // useEffect(()=>{
-  //     setTimeout(function () {
-  //         var totalItems = $('.carousel-item').length-1;
-  //         // console.log(totalItems,'div active',currentIndex,currentIndex1)
-  //         console.log(timer,'Hello from setTimeout',totalItems)
-  //         if(timer >= totalItems){
-  //             setTimer(1)
-  //         } else{
-  //             setTimer(timer+1)
-  //         }
-  //     }, 5000)
-  // },[timer])
 
   function nextIndicater(type) {
     var totalItems = $('.thired-phase').length;
@@ -51,9 +38,9 @@ export default function Thired_phase() {
 
   let invest_future
   let lang = JSON.parse(localStorage.getItem('language'))
-  if(lang == "ltr"){
+  if (lang == "ltr") {
     invest_future = "Invest in Future"
-  } else{
+  } else {
     invest_future = "استثمر في المستقبل"
   }
   return (<div className="mb-5 third_banner">
@@ -67,120 +54,120 @@ export default function Thired_phase() {
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div className="thired-phase">
-          <Zoom right cascade>
-            <p className="business-lines-heading1 mt-5">{invest_future}</p>
+            <Zoom right cascade>
+              <p className="business-lines-heading1 mt-5">{invest_future}</p>
             </Zoom>
             <div className="row">
-            <Fade right>
-              <div className=" col-xs-12 col-md-4 ml-5">
-              <img src={investmentinfuture3d} className="invest-in-future-img1 ml-5" />
-              </div>
-            </Fade>
+              <Fade right>
+                <div className=" col-xs-12 col-md-4 ml-5">
+                  <img src={investmentinfuture3d} className="invest-in-future-img1 ml-5" />
+                </div>
+              </Fade>
               <div className="col-md-6 ml-5 spaceing1 mt-5">
                 {/* <p className="invest-in-future-subheading">Leira future Smart City</p> */}
                 <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
 
                 <div class="mt-5 d-flex flex-column" style={{ display: "" }}>
-      <div class={""} dir="ltr">
-      <a href="#carousel2ExampleIndicators" role="button" data-slide="prev"><img src={arrowleft} class="arrow-left" title="" onClick={()=>nextIndicater('prev')}/></a>
-        <span class="count_div ml-3 mr-3">{current} / {totalItems}</span>
-        <a href="#carousel2ExampleIndicators" role="button" data-slide="next"><img src={arrowright} class="arrow-right" title="" onClick={()=>nextIndicater('next')}/></a>
-      </div>
-      <button type="button" class={lang == "ltr"?"btn read_more mt-5":"btn read_more_ar mt-5"}>Read More</button>
-    </div>
+                  <div class={""} dir="ltr">
+                    <a href="#carousel2ExampleIndicators" role="button" data-slide="prev"><img src={arrowleft} class="arrow-left" title="" onClick={() => nextIndicater('prev')} /></a>
+                    <span class="count_div ml-3 mr-3">{current} / {totalItems}</span>
+                    <a href="#carousel2ExampleIndicators" role="button" data-slide="next"><img src={arrowright} class="arrow-right" title="" onClick={() => nextIndicater('next')} /></a>
+                  </div>
+                  <button type="button" class={lang == "ltr" ? "btn read_more mt-5" : "btn read_more_ar mt-5"}>Read More</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-        <div className="thired-phase">
-          <Zoom right cascade>
-            <p className="business-lines-heading1 mt-5">Invest in Future</p>
+          <div className="thired-phase">
+            <Zoom right cascade>
+              <p className="business-lines-heading1 mt-5">Invest in Future</p>
             </Zoom>
             <div className="row">
-            <Fade right>
-              <div className=" col-xs-12 col-md-4 ml-5">
-              <img src={invertinginfuture} className="invest-in-future-img1 ml-5" />
-              </div>
-            </Fade>
+              <Fade right>
+                <div className=" col-xs-12 col-md-4 ml-5">
+                  <img src={invertinginfuture} className="invest-in-future-img1 ml-5" />
+                </div>
+              </Fade>
               <div className="col-md-6 ml-5 spaceing">
                 <p className="invest-in-future-subheading mb-5 mt-5">Leira future Smart City</p>
                 <p className="invest-in-future-text m-2">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
 
                 <p className="decisioning">Invest using Traditional Currency</p>
                 <div class="d-flex justify-content-between m-2">
-                  <div class={lang == "ltr"?"progress mr-5":"progress ml-5"}>
+                  <div class={lang == "ltr" ? "progress mr-5" : "progress ml-5"}>
                     <div class="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <button type="button" class="btn btn-dark invest-button">Invest</button>
                 </div>
-                    <div className="decission ml-2">Decisioning 79%</div>
+                <div className="decission ml-2">Decisioning 79%</div>
 
                 <p className="decisioning">Invest using LeiraCoin Crypto Currency</p>
                 <div class="d-flex justify-content-between m-2">
-                  <div class={lang == "ltr"?"progress mr-5":"progress ml-5"}>
+                  <div class={lang == "ltr" ? "progress mr-5" : "progress ml-5"}>
                     <div class="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <button type="button" class="btn btn-dark invest-button">Invest</button>
                 </div>
                 <div className="decission ml-2">Decisioning 90%</div>
                 <div class="mt-5 mb-4" style={{ display: "flex" }}>
-      <button type="button" class="btn read_more">Read More</button>
-      <div class={"col-md-4 col-xl-3 col-sm-5 col-lg-4 col-xs-4 d-flex justify-content-between"}  dir="ltr">
-      <a href="#carousel2ExampleIndicators" role="button" data-slide="prev"><img src={arrowleft} class="arrow-left" title="" onClick={()=>nextIndicater('prev')}/></a>
-        <span class="count_div">{current} / {totalItems}</span>
-        <a href="#carousel2ExampleIndicators" role="button" data-slide="next"><img src={arrowright} class="arrow-right" title="" onClick={()=>nextIndicater('next')}/></a>
-      </div>
-    </div>
+                  <button type="button" class="btn read_more">Read More</button>
+                  <div class={"col-md-4 col-xl-3 col-sm-5 col-lg-4 col-xs-4 d-flex justify-content-between"} dir="ltr">
+                    <a href="#carousel2ExampleIndicators" role="button" data-slide="prev"><img src={arrowleft} class="arrow-left" title="" onClick={() => nextIndicater('prev')} /></a>
+                    <span class="count_div">{current} / {totalItems}</span>
+                    <a href="#carousel2ExampleIndicators" role="button" data-slide="next"><img src={arrowright} class="arrow-right" title="" onClick={() => nextIndicater('next')} /></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-        <div className="thired-phase">
-          <Zoom right cascade>
-            <p className="business-lines-heading1 mt-5">Invest in Future</p>
+          <div className="thired-phase">
+            <Zoom right cascade>
+              <p className="business-lines-heading1 mt-5">Invest in Future</p>
             </Zoom>
             <div className="row">
-            <Fade right>
-              <div className=" col-xs-12 col-md-4 ml-5">
-              <img src={invertinginfuture} className="invest-in-future-img1 ml-5" />
-              </div>
-            </Fade>
+              <Fade right>
+                <div className=" col-xs-12 col-md-4 ml-5">
+                  <img src={invertinginfuture} className="invest-in-future-img1 ml-5" />
+                </div>
+              </Fade>
               <div className="col-md-6 ml-5 spaceing">
                 <p className="invest-in-future-subheading mb-5 mt-5">Leira future Smart City</p>
                 <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
 
                 <p className="decisioning">Invest using Traditional Currency</p>
                 <div class="d-flex justify-content-between">
-                  <div class={lang == "ltr"?"progress mr-5":"progress ml-5"}>
+                  <div class={lang == "ltr" ? "progress mr-5" : "progress ml-5"}>
                     <div class="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <button type="button" class="btn btn-dark invest-button">Invest</button>
                 </div>
-                    <div className="decission ml-2">Decisioning 79%</div>
+                <div className="decission ml-2">Decisioning 79%</div>
 
                 <p className="decisioning">Invest using LeiraCoin Crypto Currency</p>
                 <div class="d-flex justify-content-between">
-                  <div class={lang == "ltr"?"progress mr-5":"progress ml-5"}>
+                  <div class={lang == "ltr" ? "progress mr-5" : "progress ml-5"}>
                     <div class="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <button type="button" class="btn btn-dark invest-button">Invest</button>
                 </div>
                 <div className="decission ml-2">Decisioning 90%</div>
                 <div class="mt-5 mb-4" style={{ display: "flex" }}>
-      <button type="button" class="btn read_more">Read More</button>
-      <div class={"col-md-4 col-xl-3 col-sm-5 col-lg-4 col-xs-4 d-flex justify-content-between"}  dir="ltr">
-      <a href="#carousel2ExampleIndicators" role="button" data-slide="prev"><img src={arrowleft} class="arrow-left" title="" onClick={()=>nextIndicater('prev')}/></a>
-        <span class="count_div">{current} / {totalItems}</span>
-        <a href="#carousel2ExampleIndicators" role="button" data-slide="next"><img src={arrowright} class="arrow-right" title="" onClick={()=>nextIndicater('next')}/></a>
-      </div>
-    </div>
+                  <button type="button" class="btn read_more">Read More</button>
+                  <div class={"col-md-4 col-xl-3 col-sm-5 col-lg-4 col-xs-4 d-flex justify-content-between"} dir="ltr">
+                    <a href="#carousel2ExampleIndicators" role="button" data-slide="prev"><img src={arrowleft} class="arrow-left" title="" onClick={() => nextIndicater('prev')} /></a>
+                    <span class="count_div">{current} / {totalItems}</span>
+                    <a href="#carousel2ExampleIndicators" role="button" data-slide="next"><img src={arrowright} class="arrow-right" title="" onClick={() => nextIndicater('next')} /></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-       
+
       </div>
     </div>
 

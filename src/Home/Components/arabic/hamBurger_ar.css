@@ -18,21 +18,22 @@
         height: 560px;
         border-radius: 8px
     }
-    
-.modal-dialog_ar {
-    position: fixed;
-    margin: auto;
-    width: 408px;
-    /* height: 100%; */
-    /* right: -8%; */
-    margin-top: 9%;
-    /* float: left; */
-    left: 0;
-    margin-left: -25.2%;
-}
-.modal-footer_ar {
-    margin-top: 144% !important;
-}
+
+    .modal-dialog_ar {
+        position: fixed;
+        margin: auto;
+        width: 408px;
+        /* height: 100%; */
+        /* right: -8%; */
+        margin-top: 9%;
+        /* float: left; */
+        left: 0;
+        margin-left: -25.2%;
+    }
+
+    .modal-footer_ar {
+        margin-top: 144% !important;
+    }
 
 }
 
@@ -46,7 +47,7 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        width: 68%;
+        width: 83%;
         pointer-events: auto;
         background-color: #000;
         background-clip: padding-box;
@@ -56,21 +57,22 @@
         height: 570px;
         border-radius: 8px
     }
-    
-.modal-dialog_ar {
-    position: fixed;
-    margin: auto;
-    width: 440px;
-    /* height: 100%; */
-    /* right: -8%; */
-    margin-top: 9%;
-    /* float: left; */
-    left: 0;
-    margin-left: -9.2%;
-}
-.modal-footer_ar {
-    margin-top: 140% !important;
-}
+
+    .modal-dialog_ar {
+        position: fixed;
+        margin: auto;
+        width: 440px;
+        /* height: 100%; */
+        /* right: -8%; */
+        margin-top: 9%;
+        /* float: left; */
+        left: 0;
+        margin-left: -4.9%;
+    }
+
+    .modal-footer_ar {
+        margin-top: 110% !important;
+    }
 
 }
 
@@ -99,7 +101,8 @@ button.close_ar {
 
 }
 
-.close_ar:focus, .close_ar:hover {
+.close_ar:focus,
+.close_ar:hover {
     color: #fff;
     text-decoration: none;
     opacity: .75;
@@ -115,10 +118,11 @@ button.close_ar {
     text-align: left;
     margin-top: 4% !important;
 }
+
 .model-body-text_ar {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     align-items: center;
@@ -131,7 +135,27 @@ button.close_ar {
     width: max-content;
 }
 
+.fade.show {
+    opacity: 0.98;
+}
+
 .model-body-text-selected-ar {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    align-items: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #AA9063;
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+    margin-right: 16%;
+}
+
+.model-body-text_ar:hover {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -157,7 +181,7 @@ button.close_ar {
     width: max-content;
     text-transform: uppercase;
     cursor: pointer;
-    margin-right: 34%;
+    margin-right: 26%;
 }
 
 .business-lines-selected_ar {
@@ -186,6 +210,14 @@ button.close_ar {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
 }
 
 .btn-warning_ar {
@@ -200,6 +232,14 @@ button.close_ar {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
 }
 
 .langEng {
@@ -209,20 +249,24 @@ button.close_ar {
     position: relative;
     cursor: pointer;
     font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 132px;
+    height: 42px;
 }
 
 .langArab {
     background-color: #FFFFFF !important;
     /* margin-right: -5px !important; */
-    
+
     cursor: pointer;
     font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 132px;
+    height: 42px;
 }
 
 .langEngArab {
@@ -232,16 +276,124 @@ font-size: 18px;
     z-index: 0 !important;
     position: relative;
     font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 132px;
+    height: 42px;
 }
 
 .langArabEng {
     background-color: #FFFFFF !important;
     cursor: pointer;
     font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 132px;
+    height: 42px;
+}
+
+.langEng_mobile {
+    background-color: #f0bb7c !important;
+    margin-right: -5px !important;
+    z-index: 0 !important;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100px;
+    height: 42px;
+}
+
+.langArab_mobile {
+    background-color: #FFFFFF !important;
+    /* margin-right: -5px !important; */
+
+    cursor: pointer;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100px;
+    height: 42px;
+}
+
+.langEngArab_mobile {
+    background-color: #f0bb7c;
+    cursor: pointer;
+    margin-right: -5px !important;
+    z-index: 0 !important;
+    position: relative;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100px;
+    height: 42px;
+}
+
+.langArabEng_mobile {
+    background-color: #FFFFFF !important;
+    cursor: pointer;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100px;
+    height: 42px;
+}
+
+.langEng_mobile_ar {
+    background-color: #f0bb7c !important;
+    margin-right: -5px !important;
+    z-index: 0 !important;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100px;
+    height: 42px;
+}
+
+.langArab_mobile_ar {
+    background-color: #FFFFFF !important;
+    /* margin-right: -5px !important; */
+
+    cursor: pointer;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100px;
+    height: 42px;
+}
+
+.langEngArab_mobile_ar {
+    background-color: #f0bb7c;
+    cursor: pointer;
+    margin-right: -5px !important;
+    z-index: 0 !important;
+    position: relative;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100px;
+    height: 42px;
+}
+
+.langArabEng_mobile_ar {
+    background-color: #FFFFFF !important;
+    cursor: pointer;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100px;
+    height: 42px;
 }

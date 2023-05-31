@@ -35,13 +35,6 @@ export function Homepage1() {
     const isMobile = useMediaQuery({ maxWidth: 1199 })
     return isMobile ? children : null
   }
-  // window.addEventListener('scroll', function () {
-  //   if (window.pageYOffset > 0) {
-  //     console.log('inside scroll',window.pageYOffset)
-  //   }else{
-  //     console.log('inside not scroll',window.pageYOffset)
-  //   }
-  // })
 
   function changelanguage(lan){
     setLangChange(lan)

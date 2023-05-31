@@ -52,6 +52,7 @@
     height: 2px;
     color: #fff;
     background-color: #AA9063;
+    margin-top: -1%;
     /* margin-left: 20%;
     margin-top: -13%; */
     /* margin:auto; */
@@ -63,8 +64,12 @@
     color: #fff;
     background-color: #AA9063;
     /* margin-left: 20%; */
-    margin-top: -14%;
+    margin-top: -25%;
     /* margin:auto; */
+}
+
+.topinc{
+    margin-top: 15% !important;
 }
 
 .square {
@@ -78,6 +83,7 @@
     z-index: 1;
     background-color: #fff;
     transition: transform .2s;
+    border-radius: 9px
     /* Animation */
 }
 
@@ -96,6 +102,7 @@
     background-color: #fff;
     transition: transform .2s;
     margin-right: 19%;
+    border-radius: 9px
 }
 
 .square_ar:hover {

@@ -31,7 +31,6 @@ export function Homepage() {
   function moveimage(moving){
     if(moving == 'next'){
       photo.map((obj,i)=>{
-        console.log(i,'obj',obj,photo.length)
         if(i == photo.length-1){
           obj.id = 1
         }else{
@@ -56,7 +55,6 @@ export function Homepage() {
   }
 
   function getimage(imagefor){
-    console.log(imagefor,'imagefor',photo)
     if(photo.length != 0){
       // photo.map((lines)=>{
       //   console.log(imagefor,'imglines',lines,lines.id)
@@ -88,7 +86,6 @@ export function Homepage() {
   }
   }
 
-console.log('photoupdtaed',photo)
   return (<div>
         <div className="d-flex justiy-content-between mt-5">
         <div class="flip-box">

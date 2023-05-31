@@ -31,36 +31,48 @@
 
 }
 
-.toping{
-    margin-top: 15% !important;
+@media screen and (min-device-width: 767px) {
+    .toping {
+        margin-top: 15% !important;
+    }
 }
-.toping1{
+
+@media screen and (max-width: 767px) {
+    .toping {
+        margin-top: 30% !important;
+    }
+}
+
+.toping1 {
     margin-top: 20% !important;
 }
+
 @media screen and (max-width: 540px) {
-.about_welcome {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    /* line-height: 43px; */
-    align-items: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
+    .about_welcome {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        /* line-height: 43px; */
+        align-items: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+    }
+
+    .labout_longdesc {
+        position: relative;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        align-items: center;
+        letter-spacing: 0.08em;
+        color: #FFFFFF;
+        width: 95%;
+    }
 }
-.labout_longdesc {
-    position: relative;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
-    align-items: center;
-    letter-spacing: 0.08em;
-    color: #FFFFFF;
-    width: 95%;
-}
-}
+
 @media screen and (min-device-width: 540px) {
     .about_welcome {
         font-family: 'Roboto';
@@ -75,6 +87,7 @@
         display: flex;
 
     }
+
     .labout_longdesc {
         position: relative;
         font-family: 'Roboto';
