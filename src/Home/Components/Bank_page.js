@@ -78,7 +78,7 @@ export function BankPage() {
                     <div className="banking_style mt-5">
                         Share
 
-                        <img src={twitter} className="social_icons ml-4" />
+                        <img src={twitter} className={langChange == "ltr"?"social_icons ml-4":"social_icons ml-2 mr-4"} />
                         <img src={facebook} className="social_icons ml-2" />
                         <img src={insta} className="social_icons ml-2" />
                         <img src={skype} className="social_icons ml-2" />

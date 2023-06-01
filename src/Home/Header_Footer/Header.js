@@ -59,11 +59,15 @@ export default function Header(props) {
     setLangChange(dir)
     languageChange(dir)
   },[])
+
+  console.log('langChange==',langChange)
   
   return (<div>
       <div className={isblack? "navclass mt-5":"navclass"}>
         <div className="d-flex">
-      <div><img src={isblack? logowhite : logo} className={isblack?'logo_1 ml-5':'ml-5'} /></div>
+          {langChange == "eng" ?
+      <div><img src={isblack? logowhite : logo} className={isblack?'logo_1 ml-5':'ml-5'} /></div>:
+      <div><img src={isblack? logowhite : logo} className={isblack?'logo_1 mr-5':'mr-5'} /></div>}
         <div className={isblack? "d-flex path text-white ml-2 mt-4":"d-flex path ml-2 mt-5"}>
           <span className="mr-1">{props.path}</span> <label className="ml-1">{props.page}</label></div>
           </div>

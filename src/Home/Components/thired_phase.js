@@ -68,7 +68,7 @@ export default function Thired_phase() {
                 <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
 
                 <div class="mt-5 d-flex flex-column invest_buttons_align" style={{ display: "" }}>
-                  <div class={""} dir="ltr">
+                  <div class={"arraw_direction_ar"} dir="ltr">
                     <a href="#carousel2ExampleIndicators" role="button" data-slide="prev"><img src={arrowleft} class="arrow-left" title="" onClick={() => nextIndicater('prev')} /></a>
                     <span class="count_div ml-3 mr-3">{current} / {totalItems}</span>
                     <a href="#carousel2ExampleIndicators" role="button" data-slide="next"><img src={arrowright} class="arrow-right" title="" onClick={() => nextIndicater('next')} /></a>
@@ -90,7 +90,7 @@ export default function Thired_phase() {
                   <img src={invertinginfuture} className="invest-in-future-img1 ml-5" />
                 </div>
               </Fade>
-              <div className="col-md-6 ml-5 spaceing">
+              <div className="col-md-6 ml-5 spaceing m-3">
                 <p className="invest-in-future-subheading mb-5 mt-5">Leira future Smart City</p>
                 <p className="invest-in-future-text m-2">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
 
@@ -134,7 +134,7 @@ export default function Thired_phase() {
                   <img src={invertinginfuture} className="invest-in-future-img1 ml-5" />
                 </div>
               </Fade>
-              <div className="col-md-6 ml-5 spaceing">
+              <div className="col-md-6 ml-5 spaceing m-3">
                 <p className="invest-in-future-subheading mb-5 mt-5">Leira future Smart City</p>
                 <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
 

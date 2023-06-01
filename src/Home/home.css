@@ -334,6 +334,7 @@
 .hamberIcon {
     width: 26px;
     margin-top: 1px !important;
+    cursor: pointer;
 }
 
 .rightCornerGold {
@@ -738,13 +739,26 @@ button.close {
     border-radius: 33px;
     margin-right: 11%;
     width: 95%;
-    height: 32px;
+    height: 31px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+letter-spacing: 0.08em;
+
+color: #919191;
 }
 .newsletter_input_ar {
     border-radius: 33px;
     margin-right: 0%;
     width: 100%;
-    height: 32px;
+    height: 31px;
+    font-style: normal;
+font-weight: 400;
+font-size: 11px;
+letter-spacing: 0.08em;
+
+color: #919191;
 }
 
 .newsletter_arrow {
@@ -949,7 +963,7 @@ button.close {
 
 }
 
-@media (min-width: 449px) {
+@media (min-width: 449px) and (max-width: 1919px) {
     .modal-content {
         position: relative;
         display: -webkit-box;
@@ -973,9 +987,9 @@ button.close {
     .modal-dialog {
         position: fixed;
         margin: auto;
-        width: 453px;
+        width: 444px;
         /* height: 100%; */
-        right: -6.3%;
+        right: -5.3%;
         margin-top: 9%;
     }
 
@@ -983,4 +997,46 @@ button.close {
         margin-top: 117% !important;
     }
 
+}
+
+
+@media (min-width: 1920px) {
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 79%;
+        pointer-events: auto;
+        background-color: #000;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 0.3rem;
+        outline: 0;
+        height: 570px;
+        border-radius: 8px
+    }
+
+    .modal-dialog {
+        position: fixed;
+        margin: auto;
+        width: 449px;
+        /* height: 100%; */
+        right: -4.1%;
+        margin-top: 9%;
+    }
+
+    .model-footer {
+        margin-top: 117% !important;
+    }
+
+}
+
+.carousel{
+    position: relative;
+    /* width: 117% !important; */
 }

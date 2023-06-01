@@ -49,9 +49,9 @@ export default function Footer() {
                                 <img src={linkedin} className={lang == "ltr" ?"navbar-social-icons ml-3":"navbar-social-icons ml-3"} />
                             </div>
                             <div className="mt-4 ml-4">
-                                <span className={lang=="ltr"?"newsletter":"newsletter_ar"}>Newsletter</span>
+                                <span className={lang=="ltr"?"newsletter ml-2":"newsletter_ar mr-1"}>Newsletter</span>
                             </div>
-                            <div className="">
+                            <div className={lang=="ltr"?"mr-4":"ml-4"}>
                                 <input type="" className={lang == "ltr" ?"newsletter_input":"newsletter_input_ar"} placeholder="Enter your Email ID"/><img src={arrow} className={lang == "ltr"?"newsletter_arrow":"newsletter_arrow_ar"} />
                             </div>
                         </div>
@@ -80,7 +80,7 @@ export default function Footer() {
                             <img src={skype} className="navbar-social-icons_mobile" />
                             <img src={linkedin} className="navbar-social-icons_mobile" />
                         </div>
-                        <span className={lang == "ltr" ?"newsletter":"newsletter_ar"}>Newsletter</span>
+                        <span className={lang == "ltr" ?"newsletter ml-2":"newsletter_ar mr-1"}>Newsletter</span>
                         <div className={lang == "ltr"?"":"phonemail_ar"}>
                             <input type="" className="newsletter_input_mobile" placeholder="Enter your Email ID"/><img src={arrow} className={lang == "ltr"?"newsletter_arrow":"newsletter_arrow_mobile_ar"} />
                         </div>

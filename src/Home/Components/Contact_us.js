@@ -105,7 +105,7 @@ export function Contact_Us(props) {
                     </div>
                 </div>
             </div>
-            <div className="widthing_trustline m-5">
+            <div className={lang == "ltr"?"widthing_trustline m-5":"widthing_trustline_ar m-5"}>
                 <p class={lang == "ltr" ?"trustline":"trustline_ar"}>TRUSTLINE</p>
                 <p className={lang == "ltr"? "trusline_des":"trusline_des_ar"}>Leira Holdings recognises the value of transparency and accountability in its management practices and supports the right of individuals to report fraud or unethical behaviour.</p>
                 <p className={lang == "ltr"? "trusline_des mt-5":"trusline_des_ar mt-5"}>Please address your concerns via our dedicated website <span className="mail">leira.trustline.com</span></p>

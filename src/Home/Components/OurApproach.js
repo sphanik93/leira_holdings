@@ -67,7 +67,7 @@ export default function OurApproach() {
                             <p className="ourapproach ">{our_approach}</p>
                         </Zoom>
                     </div>
-                    <div className="mt-5 ml-5 d-flex justify-content-between">
+                    <div className="mt-5 ml-2 d-flex justify-content-between">
                         <div className="mt-5 m-5">
                             <p className={listSelected == "objective" ? "ourapproach_matter mt-5" : "objective mt-5"} onClick={() => changeType('objective')}>Objective</p>
                             <p className={listSelected == 'values that matters' ? "ourapproach_matter mt-5 topinc" : "objective mt-5 topinc"} onClick={() => changeType('values that matters')}>Values that matter</p>
