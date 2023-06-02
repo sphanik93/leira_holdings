@@ -65,7 +65,7 @@ export default function Thired_phase() {
               </Fade>
               <div className="col-md-6 ml-5 spaceing1 mt-5">
                 {/* <p className="invest-in-future-subheading">Leira future Smart City</p> */}
-                <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
+                <p className="invest-in-future-text m-3">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
 
                 <div class="mt-5 d-flex flex-column invest_buttons_align" style={{ display: "" }}>
                   <div class={"arraw_direction_ar"} dir="ltr">
@@ -136,7 +136,7 @@ export default function Thired_phase() {
               </Fade>
               <div className="col-md-6 ml-5 spaceing m-3">
                 <p className="invest-in-future-subheading mb-5 mt-5">Leira future Smart City</p>
-                <p className="invest-in-future-text">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
+                <p className="invest-in-future-text ">Leira Holding offers various investment opportunities to individuals who are interested in investing in their projects. We provide investors with different options to invest in their projects, including traditional currencies and Leiracoin cryptocurrency.</p>
 
                 <p className="decisioning">Invest using Traditional Currency</p>
                 <div class="d-flex justify-content-between">
